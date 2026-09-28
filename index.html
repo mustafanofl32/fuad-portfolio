@@ -7,9 +7,9 @@
 <meta name="description" content="Fuad Qadan, graphic designer and photographer in Amman, Jordan. Awareness campaigns, roll-ups and brochures, product ads and video.">
 <meta property="og:title" content="Fuad Qadan · Graphic Designer & Photographer">
 <meta property="og:description" content="Awareness campaigns, roll-ups and brochures, product ads and video. Amman, Jordan.">
-<meta property="og:image" content="https://mustafanofl32.github.io/fuad-portfolio/media/v1-poster.jpg">
+<meta property="og:image" content="https://mustafanofl32.github.io/fuad-portfolio/img/portrait.webp">
 <link rel="manifest" href="data:application/manifest+json,{\"name\":\"Fuad Qadan\",\"icons\":[{\"src\":\"https://mustafanofl32.github.io/fuad-portfolio/icon-512.png\",\"sizes\":\"512x512\",\"type\":\"image/png\"}]}">
-<meta name="theme-color" content="#0D1B2A">
+<meta name="theme-color" content="#0B1826">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -25,66 +25,79 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Readex+Pro:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap">
 <style>
 :root{
   color-scheme:light;
-  --bg:#F3F5F8; --panel:#E4E9F0; --ink:#0D1B2A; --muted:#43546A; --faint:#56677E; --rule:#D2D9E3;
-  --accent:#0E2A47; --steel:#2F6690; --lime:#F4A259; --on-lime:#0D1B2A; --forest:#0E2A47; --shade:rgba(13,27,42,.18);
-  --q1:#0E2A47; --q2:#2F6690; --btn:#0E2A47; --on-btn:#F3F5F8;
+  --bg:#F3F5F8; --paper:#FFFFFF; --panel:#E5EAF1; --ink:#0D1B2A; --muted:#43546A; --faint:#5E6F85; --rule:#D3DAE4; --mark:#8C9BB0;
+  --accent:#0E2A47; --steel:#2F6690; --amber:#F4A259; --amber-ink:#A4531A; --on-amber:#0D1B2A;
+  --q1:#0E2A47; --q2:#2F6690; --btn:#0E2A47; --on-btn:#F3F5F8; --shade:rgba(13,27,42,.20);
+  --screen:#07111C; --screen-ink:#EAF0F6; --screen-muted:#9EB0C5; --screen-rule:#1C2E44;
   --display:"Sora", "Segoe UI", system-ui, sans-serif;
   --body:"DM Sans", "Segoe UI", system-ui, sans-serif;
-  --ease:cubic-bezier(.22,1,.36,1);
+  --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
   --spring:cubic-bezier(.34,1.4,.64,1);
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){ color-scheme:dark;
-    --bg:#0D1B2A; --panel:#15273B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8396AD; --rule:#22374F;
-    --accent:#F4A259; --shade:rgba(0,0,0,.5); --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; }
+    --bg:#0B1826; --paper:#102135; --panel:#13263B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8699B0; --rule:#20354D; --mark:#5D7390;
+    --accent:#F4A259; --amber-ink:#F4A259; --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; --shade:rgba(0,0,0,.5); }
 }
 :root[data-theme="dark"]{ color-scheme:dark;
-  --bg:#0D1B2A; --panel:#15273B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8396AD; --rule:#22374F;
-  --accent:#F4A259; --shade:rgba(0,0,0,.5); --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; }
+  --bg:#0B1826; --paper:#102135; --panel:#13263B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8699B0; --rule:#20354D; --mark:#5D7390;
+  --accent:#F4A259; --amber-ink:#F4A259; --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; --shade:rgba(0,0,0,.5); }
 html[lang="ar"]{ --display:"Readex Pro", "Segoe UI", Tahoma, sans-serif; --body:"Readex Pro", "Segoe UI", Tahoma, sans-serif; }
 html[lang="en"] [lang="ar"].t, html[lang="ar"] .t[lang="en"]{display:none}
 
 *{box-sizing:border-box}
-html{background:var(--bg); scroll-behavior:smooth; scrollbar-color:var(--faint) var(--bg)}
-body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden; caret-color:var(--accent); transition:background-color .5s var(--ease), color .5s var(--ease)}
-html[lang="ar"] body{font-size:17.5px; line-height:1.8}
+html{background:var(--bg); scroll-behavior:smooth; scrollbar-color:var(--mark) var(--bg)}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden; caret-color:var(--amber); transition:background-color .5s var(--ease), color .5s var(--ease)}
+html[lang="ar"] body{font-size:17.5px; line-height:1.85}
 img,video{display:block; max-width:100%}
 figure{margin:0}
 a{color:inherit; text-decoration:none}
 button{font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer}
 svg.ic{width:20px; height:20px; flex:none; stroke:currentColor; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round}
-::selection{background:var(--lime); color:var(--on-lime)}
-:focus-visible{outline:2px solid var(--accent); outline-offset:4px; border-radius:4px}
+html[dir="rtl"] svg.ic{transform:scaleX(-1)}
+::selection{background:var(--amber); color:var(--on-amber)}
+:focus-visible{outline:2px solid var(--amber); outline-offset:4px; border-radius:4px}
 .wrap{max-width:1280px; margin:0 auto; padding-inline:clamp(18px,4vw,48px)}
-h1,h2,h3{font-family:var(--display); margin:0; font-weight:600; letter-spacing:-.02em; text-wrap:balance}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{letter-spacing:0; font-weight:700}
+h1,h2,h3{font-family:var(--display); margin:0; font-weight:600; letter-spacing:-.025em; text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{letter-spacing:0; font-weight:600}
+.mono{font-family:var(--mono); font-size:12px; letter-spacing:.04em; font-variant-numeric:tabular-nums; direction:ltr; unicode-bidi:isolate}
 
-.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition:background-size .5s var(--ease)}
-html[dir="rtl"] .ul{background-position:100% 100%}
-.ul:hover,.reel:hover .ul,.item:hover .ul{background-size:100% 1px}
-
-/* text roll: the word slides up and its twin rolls in */
-.roll{display:inline-block; overflow:hidden; vertical-align:top; line-height:1.3}
-.roll > span{display:inline-block; transition:transform .55s var(--ease); text-shadow:0 1.3em currentColor}
-a:hover .roll > span,.roll:hover > span{transform:translateY(-1.3em)}
+/* crop marks: the print-proof frame used around finished pieces */
+.crop{position:relative}
+.crop::before{content:""; position:absolute; inset:-16px; pointer-events:none; z-index:2; --m:var(--mark);
+  background:
+    linear-gradient(var(--m),var(--m)) left 0 top 16px/10px 1px no-repeat,
+    linear-gradient(var(--m),var(--m)) left 16px top 0/1px 10px no-repeat,
+    linear-gradient(var(--m),var(--m)) right 0 top 16px/10px 1px no-repeat,
+    linear-gradient(var(--m),var(--m)) right 16px top 0/1px 10px no-repeat,
+    linear-gradient(var(--m),var(--m)) left 0 bottom 16px/10px 1px no-repeat,
+    linear-gradient(var(--m),var(--m)) left 16px bottom 0/1px 10px no-repeat,
+    linear-gradient(var(--m),var(--m)) right 0 bottom 16px/10px 1px no-repeat,
+    linear-gradient(var(--m),var(--m)) right 16px bottom 0/1px 10px no-repeat;
+  transition:inset .6s var(--ease)}
+.crop:hover::before{--m:var(--amber); inset:-20px}
 
 /* ---------- top bar ---------- */
-.top{display:flex; justify-content:space-between; align-items:center; gap:16px; padding-block:24px}
-.top .name{font-family:var(--display); font-weight:600; font-size:18px; white-space:nowrap; display:inline-flex; align-items:center; gap:10px}
-.logo{width:54px; height:32px; overflow:visible}
+.top{display:flex; justify-content:space-between; align-items:center; gap:16px; padding-block:22px}
+.top .name{font-family:var(--display); font-weight:600; font-size:17px; white-space:nowrap; display:inline-flex; align-items:center; gap:10px}
+.logo{width:50px; height:30px; overflow:visible}
 .logo .q1{stop-color:var(--q1)} .logo .q2{stop-color:var(--q2)}
-.logo .sl{transform-box:fill-box; transform-origin:center; transition:transform .7s var(--spring)}
-.name:hover .logo .sl{transform:rotate(14deg)}
+.logo .sl{stroke:var(--amber); transform-box:fill-box; transform-origin:center; transition:transform .7s var(--spring)}
+.name:hover .logo .sl{transform:rotate(16deg)}
 .top .right{display:flex; align-items:center; gap:clamp(14px,2.6vw,30px)}
-.top nav{display:flex; gap:clamp(14px,2.6vw,30px); font-size:15px; color:var(--muted)}
-.top nav a:hover{color:var(--ink)}
+.top nav{display:flex; gap:clamp(14px,2.4vw,28px); font-size:15px; color:var(--muted)}
+.top nav a{position:relative; padding-block:4px}
+.top nav a::after{content:""; position:absolute; inset-inline:0; bottom:0; height:1px; background:var(--amber); transform:scaleX(0); transform-origin:left; transition:transform .45s var(--ease)}
+html[dir="rtl"] .top nav a::after{transform-origin:right}
+.top nav a:hover{color:var(--ink)} .top nav a:hover::after{transform:none}
 .switch{display:flex; align-items:center; gap:6px}
-.switch button{height:36px; min-width:36px; padding-inline:10px; border-radius:18px; border:1px solid var(--rule); font-size:14px; color:var(--muted); display:inline-flex; align-items:center; justify-content:center; overflow:hidden; position:relative; transition:border-color .3s, color .3s, transform .4s var(--spring)}
-.switch button:hover{color:var(--ink); border-color:var(--faint); transform:translateY(-1px)}
+.switch button{height:36px; min-width:36px; padding-inline:10px; border-radius:18px; border:1px solid var(--rule); font-size:14px; color:var(--muted); display:inline-flex; align-items:center; justify-content:center; transition:border-color .3s, color .3s, transform .4s var(--spring)}
+.switch button:hover{color:var(--ink); border-color:var(--mark); transform:translateY(-1px)}
 .switch button:active{transform:scale(.94)}
 .switch svg{width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; transition:transform .7s var(--spring)}
 #theme:hover svg{transform:rotate(40deg)}
@@ -93,261 +106,258 @@ a:hover .roll > span,.roll:hover > span{transform:translateY(-1.3em)}
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .switch .i-sun{display:block} :root:not([data-theme="light"]) .switch .i-moon{display:none} }
 .lang-btn{font-family:"Readex Pro", var(--body)}
 
-/* ---------- intro ---------- */
-.intro{padding-block:clamp(56px,8vw,110px) clamp(36px,5vw,64px)}
-.intro h1{font-size:clamp(42px,6.6vw,96px); font-weight:600; line-height:1.02; max-width:13ch}
-html[lang="ar"] .intro h1{line-height:1.2; max-width:12ch}
-.intro h1 .slash{color:var(--lime); font-weight:400; margin-inline:.1em; display:inline-block; transition:transform .8s var(--spring)}
-.intro h1:hover .slash{transform:rotate(18deg) scale(1.1)}
-.intro p{font-size:clamp(18px,1.6vw,21px); color:var(--muted); max-width:52ch; margin:28px 0 0}
-.intro p b{color:var(--ink); font-weight:600}
-.intro .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:32px}
-.btn{display:inline-flex; align-items:center; gap:10px; height:48px; padding-inline:22px; border-radius:24px; font-weight:600; font-size:15.5px; position:relative; overflow:hidden; isolation:isolate; transition:transform .45s var(--spring), color .35s}
-.btn::before{content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; transform:translateY(101%); transition:transform .55s var(--ease)}
-.btn:hover::before{transform:none}
+/* ---------- hero ---------- */
+.hero{display:grid; grid-template-columns:7fr 5fr; gap:clamp(32px,6vw,96px); align-items:center; padding-block:clamp(40px,6vw,88px) clamp(56px,7vw,104px)}
+.hero h1{font-size:clamp(44px,6.2vw,94px); line-height:1.02}
+html[lang="ar"] .hero h1{line-height:1.22}
+.hero h1 .slash{color:var(--amber); font-weight:300; margin-inline:.06em; display:inline-block; transition:transform .8s var(--spring)}
+.hero h1:hover .slash{transform:rotate(16deg)}
+.hero .lede{font-size:clamp(18px,1.5vw,20px); color:var(--muted); max-width:50ch; margin:26px 0 0}
+.hero .lede b{color:var(--ink); font-weight:600}
+.cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:32px}
+.btn{display:inline-flex; align-items:center; gap:12px; height:52px; padding-inline:24px 8px; border-radius:26px; font-weight:600; font-size:15.5px; transition:transform .45s var(--spring), background-color .35s, color .35s, box-shadow .5s var(--ease)}
+.btn .knob{width:36px; height:36px; border-radius:50%; display:grid; place-items:center; transition:transform .5s var(--spring)}
+.btn:hover .knob{transform:translateX(3px) rotate(-45deg)}
+html[dir="rtl"] .btn:hover .knob{transform:translateX(-3px) rotate(45deg)}
 .btn:active{transform:scale(.97)}
-.btn .ic{transition:transform .5s var(--spring)}
-.btn:hover .ic{transform:translateX(3px) rotate(-8deg)}
-html[dir="rtl"] .btn:hover .ic{transform:translateX(-3px) rotate(8deg)}
-.btn.solid{background:var(--btn); color:var(--on-btn)}
-.btn.solid::before{background:var(--lime)}
-.btn.solid:hover{color:var(--on-lime)}
-.btn.line{border:1px solid var(--rule); color:var(--ink)}
-.btn.line::before{background:var(--panel)}
+.btn.solid{background:var(--btn); color:var(--on-btn); box-shadow:0 14px 30px -18px var(--shade)}
+.btn.solid .knob{background:var(--amber); color:var(--on-amber)}
+.btn.solid:hover{box-shadow:0 22px 40px -18px var(--shade)}
+.btn.line{border:1px solid var(--rule); padding-inline:22px}
+.btn.line:hover{border-color:var(--ink)}
+.facts{display:flex; flex-wrap:wrap; gap:10px 36px; margin:40px 0 0; padding-top:20px; border-top:1px solid var(--rule)}
+.facts div{display:grid; gap:2px}
+.facts dt{font-size:13.5px; color:var(--faint)} .facts dd{margin:0; font-size:15.5px}
 
-.showreel{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(10px,1.4vw,18px)}
-.showreel .cell{border-radius:14px; overflow:hidden; transition:transform .8s var(--ease), opacity .6s var(--ease), filter .6s var(--ease)}
-.showreel video{width:100%; aspect-ratio:9/16; object-fit:cover; background:var(--panel); border-radius:14px}
-@media (hover:hover){
-  .showreel:hover .cell{opacity:.5; transform:scale(.975); filter:saturate(.7)}
-  .showreel .cell:hover{opacity:1; transform:scale(1.02); filter:none}
-}
-
+.portrait{margin:16px}
+.portrait .ph{border-radius:4px; overflow:hidden; background:var(--panel); aspect-ratio:1; box-shadow:0 40px 80px -40px var(--shade)}
+.portrait img{width:100%; height:100%; object-fit:cover; transition:transform 1.4s var(--ease)}
+.portrait:hover img{transform:scale(1.03)}
+.portrait figcaption{display:flex; justify-content:space-between; margin-top:26px; color:var(--faint)}
+.reg{position:absolute; width:26px; height:26px; top:-44px; inset-inline-end:-6px; stroke:var(--mark); fill:none; stroke-width:1; z-index:2}
 @media (prefers-reduced-motion:no-preference){
-  .intro h1{animation:settle 1.1s var(--ease) both}
-  .intro p,.intro .cta-row{animation:settle 1.1s .12s var(--ease) both}
-  .showreel video{animation:open 1.3s var(--ease) both}
-  .showreel .cell:nth-child(1) video{animation-delay:.25s}
-  .showreel .cell:nth-child(2) video{animation-delay:.38s}
-  .showreel .cell:nth-child(3) video{animation-delay:.51s}
+  .portrait .ph{animation:proof 1.5s .15s var(--ease) both}
+  .portrait::before{animation:marks 1s .9s var(--ease) both}
+  .hero h1,.hero .lede,.hero .cta,.hero .facts{animation:rise 1s var(--ease) both}
+  .hero .lede{animation-delay:.08s} .hero .cta{animation-delay:.16s} .hero .facts{animation-delay:.24s}
 }
-@keyframes settle{from{opacity:.001; transform:translateY(18px)}}
-@keyframes open{from{clip-path:inset(100% 0 0 0 round 14px); transform:translateY(24px)} to{clip-path:inset(0 0 0 0 round 14px)}}
+@keyframes proof{from{clip-path:inset(0 0 100% 0); filter:saturate(0) contrast(1.3)} 60%{filter:saturate(0) contrast(1.3)} to{clip-path:inset(0 0 0 0); filter:none}}
+@keyframes marks{from{opacity:0; inset:-2px}}
+@keyframes rise{from{opacity:.001; transform:translateY(16px)}}
 
-.clients{display:flex; flex-wrap:wrap; gap:10px 34px; padding-block:30px; margin-top:clamp(40px,6vw,72px); border-block:1px solid var(--rule); color:var(--muted); font-size:15px}
-.clients .lead{color:var(--faint)}
-.clients [data-peek]{cursor:default; transition:color .3s}
-.clients [data-peek]:hover{color:var(--ink)}
-.peek{position:fixed; left:0; top:0; z-index:15; width:190px; aspect-ratio:4/5; border-radius:12px; overflow:hidden; pointer-events:none; opacity:0; box-shadow:0 30px 60px -24px var(--shade); transform:translate3d(-999px,-999px,0) rotate(-5deg) scale(.85); transition:opacity .35s var(--ease)}
-.peek.on{opacity:1}
-.peek img{width:100%; height:100%; object-fit:cover}
+/* ---------- credits ---------- */
+.credits{display:grid; grid-template-columns:repeat(4,1fr); border-block:1px solid var(--rule)}
+.credits > div{padding:22px clamp(12px,1.6vw,22px) 24px; border-inline-start:1px solid var(--rule); transition:background-color .4s var(--ease)}
+.credits > div:first-child{border-inline-start:0; padding-inline-start:0}
+.credits b{display:block; font-family:var(--display); font-weight:600; font-size:17px; line-height:1.3}
+.credits span.w{display:block; margin-top:4px; color:var(--muted); font-size:14.5px}
+.credits > div:hover b{color:var(--amber-ink)}
 
-/* ---------- sections ---------- */
-section.work{padding-top:clamp(88px,11vw,150px)}
-.sec-head{display:grid; grid-template-columns:1fr 1fr; gap:20px 48px; align-items:end; margin-bottom:clamp(28px,4vw,52px)}
-.sec-head h2{font-size:clamp(34px,4.8vw,64px); line-height:1.05}
-.sec-head p{color:var(--muted); margin:0; max-width:50ch}
+/* ---------- section heads ---------- */
+section.block{padding-top:clamp(96px,11vw,160px)}
+.head{margin-bottom:clamp(30px,4vw,52px)}
+.head .line{display:flex; align-items:center; gap:24px}
+.head .line::after{content:""; flex:1; height:1px; background:var(--rule)}
+.head h2{font-size:clamp(34px,4.6vw,62px); line-height:1.05; max-width:16ch}
+.head p{color:var(--muted); margin:18px 0 0; max-width:58ch}
 
-/* ---------- reels ---------- */
-.reels{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(12px,1.6vw,22px)}
-.reel{border-radius:14px; transition:transform .7s var(--ease)}
-.reel .frame{position:relative; aspect-ratio:9/16; border-radius:14px; overflow:hidden; background:var(--panel); box-shadow:0 18px 40px -30px var(--shade); transition:box-shadow .7s var(--ease), border-radius .7s var(--ease)}
-.reel video,.reel.still img{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease)}
-.reel .bar{position:absolute; inset-inline:0; bottom:0; height:3px; background:var(--lime); transform:scaleX(0); transform-origin:left; transition:transform .2s linear}
-html[dir="rtl"] .reel .bar{transform-origin:right}
-.reel .dur{position:absolute; inset-inline-end:12px; bottom:12px; font-size:12.5px; font-variant-numeric:tabular-nums; color:#fff; background:rgba(8,18,29,.66); padding:2px 8px; border-radius:10px; transition:opacity .4s, transform .5s var(--ease)}
-.reel h3{font-size:18px; margin-top:14px; transition:transform .6s var(--ease)}
-.reel p{margin:2px 0 0; font-size:14.5px; color:var(--muted)}
+/* ---------- screening room (films) ---------- */
+.screen{background:var(--screen); color:var(--screen-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
+.screen .head .line::after{background:var(--screen-rule)}
+.screen .head p{color:var(--screen-muted)}
+.films{display:grid; grid-template-columns:minmax(0,2fr) minmax(0,.633fr) minmax(0,.633fr); gap:clamp(12px,1.4vw,20px); align-items:start}
+.film{cursor:pointer}
+.film .frame{position:relative; border-radius:8px; overflow:hidden; background:#0E1B2A; aspect-ratio:9/16; transition:border-radius .6s var(--ease), box-shadow .6s var(--ease)}
+.film.wide .frame{aspect-ratio:16/9}
+.film video{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease), filter .6s var(--ease)}
+.film .play{position:absolute; inset:0; margin:auto; width:64px; height:64px; border-radius:50%; background:var(--amber); display:grid; place-items:center; box-shadow:0 18px 40px -16px rgba(0,0,0,.6); transition:transform .5s var(--spring), opacity .4s}
+.film:not(.wide) .play{width:48px; height:48px; opacity:0; transform:scale(.7)}
+.film .play svg{width:26px; height:26px; fill:#0D1B2A; margin-inline-start:3px}
+.film:not(.wide) .play svg{width:20px; height:20px}
+.film .dur{position:absolute; inset-inline-end:10px; bottom:10px; font-family:var(--mono); font-size:12px; color:#EAF0F6; background:rgba(7,17,28,.72); padding:2px 8px; border-radius:6px}
+.film .bar{position:absolute; inset-inline:0; bottom:0; height:3px; background:var(--amber); transform:scaleX(0); transform-origin:left; transition:transform .2s linear}
+html[dir="rtl"] .film .bar{transform-origin:right}
+.film h3{font-size:17px; margin-top:14px; line-height:1.35}
+.film p{margin:3px 0 0; color:var(--screen-muted); font-size:14px}
 @media (hover:hover){
-  .reel:hover{transform:translateY(-6px)}
-  .reel:hover .frame{box-shadow:0 34px 60px -30px var(--shade); border-radius:20px}
-  .reel:hover video,.reel.still:hover img{transform:scale(1.06)}
-  .reel:hover .dur{opacity:0; transform:translateY(6px)}
+  .film:hover .frame{border-radius:14px; box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+  .film:hover video{transform:scale(1.04)}
+  .film:hover .play{transform:scale(1.08)}
+  .film:not(.wide):hover .play{opacity:1; transform:none}
+  .film.playing .play{opacity:0!important; transform:scale(.6)!important}
 }
 
-.more{aspect-ratio:1; border-radius:14px; padding:clamp(18px,2vw,26px); display:flex; flex-direction:column; justify-content:space-between; color:#EAF0F6; background:linear-gradient(150deg,#0E2A47,#2F6690); position:relative; overflow:hidden; isolation:isolate; transition:transform .7s var(--ease), box-shadow .7s var(--ease)}
-.more::before{content:""; position:absolute; inset:0; z-index:-1; background:var(--lime); clip-path:circle(0% at 100% 100%); transition:clip-path .8s var(--ease)}
-html[dir="rtl"] .more::before{clip-path:circle(0% at 0% 100%)}
-.more-top{display:inline-flex; align-items:center; gap:8px; font-size:14.5px; opacity:.9}
-.more-title{font-family:var(--display); font-size:clamp(24px,2.3vw,32px); font-weight:600; line-height:1.1; letter-spacing:-.015em}
-.more-go{display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600}
-.more .arrow{transition:transform .6s var(--spring)}
-html[dir="rtl"] .more .arrow{transform:scaleX(-1)}
+/* ---------- exhibition (roll-ups) ---------- */
+.expo-wall{background:var(--panel); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,112px) 0}
+.expo{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(18px,3vw,48px); padding-bottom:0; position:relative}
+.stand{cursor:zoom-in; display:flex; flex-direction:column; align-items:center}
+.stand .sheet{width:100%; aspect-ratio:1/2; overflow:hidden; background:var(--paper); box-shadow:0 24px 40px -26px var(--shade); transition:transform .8s var(--ease), box-shadow .8s var(--ease)}
+.stand img{width:100%; height:100%; object-fit:cover}
+.stand .base{width:78%; height:10px; border-radius:3px 3px 1px 1px; background:linear-gradient(#2A3A4D,#16222F)}
+.stand .floor{width:120%; height:22px; margin-top:-4px; background:radial-gradient(closest-side, rgba(13,27,42,.28), transparent); transition:transform .8s var(--ease), opacity .8s}
+.stand figcaption{padding-block:14px 0; text-align:center; font-size:14.5px}
+.stand figcaption .mono{display:block; color:var(--faint); margin-top:2px}
+.expo-floor{height:clamp(56px,6vw,84px); background:linear-gradient(var(--rule),var(--rule)) 0 0/100% 1px no-repeat, var(--bg); margin-top:-1px}
 @media (hover:hover){
-  .more:hover{transform:translateY(-6px); box-shadow:0 34px 60px -30px var(--shade); color:#0D1B2A}
-  .more:hover::before{clip-path:circle(150% at 100% 100%)}
-  html[dir="rtl"] .more:hover::before{clip-path:circle(150% at 0% 100%)}
-  .more:hover .arrow{transform:rotate(45deg)}
-  html[dir="rtl"] .more:hover .arrow{transform:scaleX(-1) rotate(45deg)}
+  .stand:hover .sheet{transform:translateY(-10px); box-shadow:0 44px 60px -30px var(--shade)}
+  .stand:hover .floor{transform:scaleX(.86); opacity:.7}
 }
 
-/* ---------- CheeZ ---------- */
-.client{display:grid; grid-template-columns:5fr 7fr; gap:clamp(28px,4vw,64px); align-items:start}
-.client .side{position:sticky; top:32px}
-.client h2{font-size:clamp(34px,4.8vw,64px); line-height:1.05}
-.client .side p{color:var(--muted)}
-.client dl{display:grid; grid-template-columns:auto 1fr; gap:8px 22px; margin:26px 0 0; font-size:15px; border-top:1px solid var(--rule); padding-top:20px}
-.client dt{color:var(--faint)}
-.client dd{margin:0}
-.posts{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(10px,1.2vw,16px); perspective:1000px}
-.post{position:relative; border-radius:10px; overflow:hidden; background:var(--panel); aspect-ratio:4/5; transition:transform .6s var(--ease), box-shadow .6s var(--ease); transform-style:preserve-3d}
-.post img{width:100%; height:100%; object-fit:cover; transition:transform 1s var(--ease)}
-.post figcaption{position:absolute; inset-inline:0; bottom:0; padding:28px 14px 12px; color:#fff; font-size:14.5px; font-weight:600; background:linear-gradient(transparent, rgba(8,18,29,.8)); transform:translateY(100%); transition:transform .55s var(--ease)}
+/* ---------- brochure + poster ---------- */
+.print{display:grid; grid-template-columns:8fr 4fr; gap:clamp(40px,5vw,80px); align-items:start}
+.seg{display:inline-flex; border:1px solid var(--rule); border-radius:20px; padding:3px; gap:2px}
+.seg button{height:32px; padding-inline:14px; border-radius:16px; font-size:14px; color:var(--muted); transition:background-color .35s var(--ease), color .35s}
+.seg button[aria-pressed="true"]{background:var(--ink); color:var(--bg)}
+.seg button:not([aria-pressed="true"]):hover{color:var(--ink)}
+.controls{display:flex; flex-wrap:wrap; gap:10px 14px; margin-bottom:34px}
+.tri{direction:ltr; display:grid; grid-template-columns:repeat(3,1fr); perspective:1600px; cursor:zoom-in; margin:16px}
+.tri .p{aspect-ratio:280/596; background-size:300% 100%; background-repeat:no-repeat; background-color:var(--paper); transition:transform 1s var(--ease), filter 1s var(--ease); box-shadow:0 30px 50px -34px var(--shade)}
+.tri .p:nth-child(1){background-position:0 0; transform-origin:right center}
+.tri .p:nth-child(2){background-position:50% 0; position:relative}
+.tri .p:nth-child(3){background-position:100% 0; transform-origin:left center}
+.tri .p:nth-child(2)::before,.tri .p:nth-child(2)::after{content:""; position:absolute; top:0; bottom:0; width:14px; pointer-events:none}
+.tri .p:nth-child(2)::before{left:0; background:linear-gradient(90deg, rgba(13,27,42,.14), transparent)}
+.tri .p:nth-child(2)::after{right:0; background:linear-gradient(-90deg, rgba(13,27,42,.14), transparent)}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .tri:hover .p:nth-child(1){transform:rotateY(22deg); filter:brightness(.93)}
+  .tri:hover .p:nth-child(3){transform:rotateY(-22deg); filter:brightness(.93)}
+}
+.tri-cap{display:flex; justify-content:space-between; gap:14px; margin-top:30px; font-size:15px}
+.tri-cap .mono{color:var(--faint)}
+.poster .ph{aspect-ratio:3294/4663; overflow:hidden; background:var(--paper); cursor:zoom-in; box-shadow:0 30px 50px -34px var(--shade)}
+.poster{margin:16px}
+.poster img{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease)}
+.poster:hover img{transform:scale(1.03)}
+.poster figcaption{display:flex; justify-content:space-between; gap:12px; margin-top:30px; font-size:15px}
+.poster figcaption .mono{color:var(--faint)}
+
+/* ---------- contact sheet (product ads) ---------- */
+.sheet-band{background:var(--screen); color:var(--screen-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
+.sheet-band .head .line::after{background:var(--screen-rule)}
+.sheet-band .head p{color:var(--screen-muted)}
+.contact-sheet{background:#0A1520; border:1px solid var(--screen-rule); border-radius:6px; padding:clamp(14px,2vw,26px)}
+.edge{display:flex; justify-content:space-between; gap:12px; color:#F4A259; opacity:.85; margin-bottom:14px}
+.frames{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(12px,1.6vw,22px)}
+.fr{cursor:zoom-in}
+.fr .img{aspect-ratio:1; overflow:hidden; background:#101F30; outline:1px solid rgba(234,240,246,.06); transition:outline-color .4s}
+.fr img{width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease), filter .6s}
+.fr figcaption{display:flex; gap:12px; align-items:baseline; margin-top:10px; font-size:14.5px}
+.fr figcaption .mono{color:#F4A259}
 @media (hover:hover){
-  .post:hover{box-shadow:0 30px 50px -28px var(--shade); z-index:1}
-  .post:hover img{transform:scale(1.06)}
-  .post:hover figcaption{transform:none}
+  .frames:hover .fr .img img{filter:brightness(.6) saturate(.8)}
+  .frames .fr:hover .img img{filter:none; transform:scale(1.04)}
+  .fr:hover .img{outline-color:#F4A259}
 }
-
-/* ---------- gallery ---------- */
-.gallery{display:grid; grid-template-columns:repeat(12,1fr); gap:clamp(12px,1.6vw,22px)}
-.item .ph{position:relative; border-radius:12px; overflow:hidden; background:var(--panel); transition:border-radius .7s var(--ease)}
-.item img{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease), filter .8s var(--ease)}
-.item figcaption{display:flex; justify-content:space-between; gap:12px; margin-top:12px; font-size:15px}
-.item figcaption .sub{color:var(--muted); transition:color .4s}
+.fr.more .img{display:flex; flex-direction:column; justify-content:space-between; padding:clamp(16px,2vw,26px); background:#0E2A47; color:#EAF0F6; position:relative; overflow:hidden; isolation:isolate}
+.fr.more .img::before{content:""; position:absolute; inset:0; z-index:-1; background:#F4A259; clip-path:circle(0% at 100% 100%); transition:clip-path .8s var(--ease)}
+html[dir="rtl"] .fr.more .img::before{clip-path:circle(0% at 0 100%)}
+.fr.more .t1{font-family:var(--display); font-size:clamp(19px,2.3vw,32px); overflow-wrap:anywhere; font-weight:600; line-height:1.1}
+.fr.more .go{display:inline-flex; align-items:center; gap:8px; font-weight:600}
+.fr.more{cursor:pointer}
 @media (hover:hover){
-  .item:hover .ph{border-radius:20px}
-  .item:hover img{transform:scale(1.045)}
-  .item:hover figcaption .sub{color:var(--accent)}
+  .fr.more:hover .img{color:#0D1B2A}
+  .fr.more:hover .img::before{clip-path:circle(150% at 100% 100%)}
+  html[dir="rtl"] .fr.more:hover .img::before{clip-path:circle(150% at 0 100%)}
 }
-.c7{grid-column:span 7} .c5{grid-column:span 5} .c4{grid-column:span 4} .c8{grid-column:span 8} .c6{grid-column:span 6}
-.r169 .ph{aspect-ratio:16/9} .r45 .ph{aspect-ratio:4/5} .r43 .ph{aspect-ratio:4/3}
-.scroller .ph{aspect-ratio:4/5; overflow-y:auto; scrollbar-width:thin}
-.scroller .ph img{height:auto}
-.scroller:hover img{transform:none}
 
-.slides{position:relative}
-.slides img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:1; transform:none; transition:opacity 1.4s var(--ease), transform 7s var(--ease)!important}
-.slides.ready img{opacity:0; transform:scale(1.08)}
-.slides.ready img.on{opacity:1; transform:scale(1)}
-.slides .dots{position:absolute; inset-inline:0; bottom:12px; display:flex; justify-content:center; gap:6px; z-index:2}
-.slides .dots i{width:6px; height:6px; border-radius:3px; background:rgba(255,255,255,.55); transition:width .5s var(--ease), background-color .5s}
-.slides .dots i.on{width:18px; background:#F4A259}
-
-/* ---------- about ---------- */
-.about{display:grid; grid-template-columns:4fr 8fr; gap:clamp(28px,5vw,80px); align-items:start}
-.about .photo{border-radius:12px; overflow:hidden}
-.about img{width:100%; aspect-ratio:1; object-fit:cover; transition:transform 1.2s var(--ease), filter .8s var(--ease); filter:grayscale(.35)}
-.about .photo:hover img{transform:scale(1.04); filter:none}
-.about .lead{font-family:var(--display); font-size:clamp(23px,2.6vw,34px); line-height:1.3; letter-spacing:-.012em; margin:0}
+/* ---------- about: spec sheet ---------- */
+.about{display:grid; grid-template-columns:5fr 7fr; gap:clamp(36px,6vw,96px); align-items:start}
+.about .lead{font-family:var(--display); font-size:clamp(24px,2.6vw,36px); line-height:1.28; letter-spacing:-.015em; margin:0}
 html[lang="ar"] .about .lead{letter-spacing:0; line-height:1.6}
 .about .lead .soft{color:var(--muted)}
-.cols{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:44px; padding-top:28px; border-top:1px solid var(--rule)}
-.cols h3{font-size:14.5px; font-family:var(--body); font-weight:600; color:var(--faint); letter-spacing:0; margin-bottom:12px}
-.cols ul{list-style:none; margin:0; padding:0; display:grid; gap:7px; font-size:15.5px}
-.cols li{transition:transform .4s var(--ease), color .3s}
-.cols li:hover{transform:translateX(4px); color:var(--accent)}
-html[dir="rtl"] .cols li:hover{transform:translateX(-4px)}
-.cols li small{display:block; color:var(--muted); font-size:14px}
+.spec{margin:0; border-top:1px solid var(--ink)}
+.spec > div{display:grid; grid-template-columns:minmax(120px,.34fr) 1fr; gap:20px; padding:16px 0; border-bottom:1px solid var(--rule)}
+.spec dt{color:var(--faint); font-size:14.5px; padding-top:2px}
+.spec dd{margin:0}
+.spec ul{list-style:none; margin:0; padding:0; display:grid; gap:4px}
+.spec small{display:block; color:var(--muted); font-size:14px}
 
 /* ---------- contact ---------- */
-.contact{padding-block:clamp(100px,12vw,170px) 60px}
-.contact h2{font-size:clamp(42px,7vw,104px); line-height:1.02; font-weight:600}
-.contact .lede{color:var(--muted); max-width:46ch; margin:18px 0 0; font-size:18px}
-.links{margin-top:44px; border-top:1px solid var(--rule)}
-.row{position:relative; display:grid; grid-template-columns:auto 1fr auto auto; align-items:center; gap:18px; padding:22px clamp(4px,1.4vw,18px); border-bottom:1px solid var(--rule); overflow:hidden; isolation:isolate; font-size:clamp(18px,2vw,26px); font-family:var(--display); font-weight:600}
-.row::before{content:""; position:absolute; inset:0; z-index:-1; background:var(--lime); clip-path:inset(100% 0 0 0); transition:clip-path .6s var(--ease)}
-.row .k{font-family:var(--body); font-size:14px; font-weight:500; color:var(--faint); min-width:120px; transition:color .4s}
-.row .v{direction:ltr; unicode-bidi:isolate; transition:transform .6s var(--ease)}
-html[dir="rtl"] .row .v{text-align:right}
-.row .ic{width:24px; height:24px}
-.row .arrow{transition:transform .6s var(--spring)}
-html[dir="rtl"] .row .arrow{transform:scaleX(-1)}
-.row .copy{font-family:var(--body); font-size:13.5px; font-weight:500; color:var(--muted); padding:6px 12px; border-radius:14px; border:1px solid var(--rule); position:relative; z-index:1; transition:background-color .3s, color .3s}
-.row .copy:hover{background:var(--ink); color:var(--bg)}
+.contact{padding-block:clamp(110px,12vw,180px) 64px}
+.contact h2{font-size:clamp(44px,7vw,104px); line-height:1.02}
+.contact .lede{color:var(--muted); max-width:48ch; margin:18px 0 0; font-size:18px}
+.mail{display:flex; flex-wrap:wrap; align-items:center; gap:14px 22px; margin-top:44px; padding-bottom:26px; border-bottom:1px solid var(--rule)}
+.mail a{font-family:var(--display); font-weight:600; font-size:clamp(24px,4.2vw,56px); letter-spacing:-.02em; direction:ltr; unicode-bidi:isolate; background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 3px no-repeat; transition:background-size .6s var(--ease)}
+.mail a:hover{background-size:100% 3px}
+.copy{font-size:14px; font-weight:500; color:var(--muted); padding:8px 14px; border-radius:18px; border:1px solid var(--rule); transition:background-color .3s, color .3s, border-color .3s}
+.copy:hover{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.copied{background:var(--amber)!important; color:var(--on-amber)!important; border-color:var(--amber)!important}
+.ways{display:grid; grid-template-columns:repeat(3,1fr); gap:0}
+.way{position:relative; display:grid; gap:6px; padding:26px clamp(14px,2vw,26px) 28px; border-bottom:1px solid var(--rule); border-inline-start:1px solid var(--rule); overflow:hidden; isolation:isolate; transition:color .4s}
+.way:first-child{border-inline-start:0}
+.way::before{content:""; position:absolute; inset:0; z-index:-1; background:var(--amber); clip-path:inset(100% 0 0 0); transition:clip-path .6s var(--ease)}
+.way .k{display:flex; justify-content:space-between; align-items:center; font-size:14px; color:var(--faint); transition:color .4s}
+.way .v{font-family:var(--display); font-weight:600; font-size:clamp(18px,1.8vw,24px); direction:ltr; unicode-bidi:isolate}
+html[dir="rtl"] .way .v{text-align:right}
+.way .ic.a{transition:transform .6s var(--spring)}
 @media (hover:hover){
-  .row:hover{color:var(--on-lime)}
-  .row:hover::before{clip-path:inset(0 0 0 0)}
-  .row:hover .k{color:var(--on-lime)}
-  .row:hover .v{transform:translateX(10px)}
-  html[dir="rtl"] .row:hover .v{transform:translateX(-10px)}
-  .row:hover .arrow{transform:rotate(45deg)}
-  html[dir="rtl"] .row:hover .arrow{transform:scaleX(-1) rotate(45deg)}
-  .row:hover .copy{border-color:rgba(13,27,42,.3); color:var(--on-lime)}
+  .way:hover{color:var(--on-amber)} .way:hover .k{color:var(--on-amber)}
+  .way:hover::before{clip-path:inset(0 0 0 0)}
+  .way:hover .ic.a{transform:rotate(45deg)}
+  html[dir="rtl"] .way:hover .ic.a{transform:scaleX(-1) rotate(45deg)}
 }
-.copied{background:var(--forest)!important; color:#EAF0F6!important}
 footer{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding-block:28px 40px; border-top:1px solid var(--rule); color:var(--faint); font-size:14px}
-footer a{color:var(--muted)}
+footer a{color:var(--muted)} footer a:hover{color:var(--ink)}
 footer .brand{display:inline-flex; align-items:center; gap:8px; color:var(--ink); font-family:var(--display); font-weight:600}
-.logo.sm{width:40px; height:24px}
+.logo.sm{width:38px; height:23px}
 
 /* ---------- floating WhatsApp ---------- */
-.wa{position:fixed; z-index:18; bottom:calc(env(safe-area-inset-bottom,0px) + 20px); inset-inline-end:20px; display:flex; align-items:center; gap:0; height:56px; padding-inline:16px; border-radius:28px; background:#1FA855; color:#fff; box-shadow:0 14px 30px -14px rgba(0,0,0,.35); font-weight:600; font-size:15px; transition:gap .5s var(--ease), padding .5s var(--ease), transform .45s var(--spring)}
+.wa{position:fixed; z-index:18; bottom:calc(env(safe-area-inset-bottom,0px) + 20px); inset-inline-end:20px; display:flex; align-items:center; height:56px; padding-inline:16px; border-radius:28px; background:#1FA855; color:#fff; box-shadow:0 14px 30px -14px rgba(0,0,0,.4); font-weight:600; font-size:15px; transition:gap .5s var(--ease), padding .5s var(--ease), transform .45s var(--spring)}
 .wa svg{width:24px; height:24px; fill:#fff; flex:none}
 .wa span{max-width:0; overflow:hidden; white-space:nowrap; transition:max-width .55s var(--ease)}
 .wa:hover{gap:10px; padding-inline:18px 22px; transform:translateY(-3px)}
 html[dir="rtl"] .wa:hover{padding-inline:22px 18px}
 .wa:hover span{max-width:200px}
-.wa:active{transform:scale(.96)}
-@media (prefers-reduced-motion:no-preference){ .wa{animation:rise .9s 1.4s var(--spring) both} }
-@keyframes rise{from{transform:translateY(90px)}}
-
-/* ---------- cursor label ---------- */
-.cursor{position:fixed; left:0; top:0; z-index:19; pointer-events:none; display:grid; place-items:center; width:86px; height:86px; margin:-43px 0 0 -43px; border-radius:50%; background:var(--lime); color:var(--on-lime); font-size:13.5px; font-weight:700; transform:translate3d(-999px,-999px,0) scale(0); transition:transform .45s var(--ease)}
-.cursor.on{transition:transform .45s var(--spring)}
-@media (hover:none){ .cursor,.peek{display:none} }
+@media (prefers-reduced-motion:no-preference){ .wa{animation:up .9s 1.6s var(--spring) both} }
+@keyframes up{from{transform:translateY(90px)}}
 
 /* ---------- viewer ---------- */
-.lb{visibility:hidden; position:fixed; inset:0; z-index:25; display:grid; grid-template-rows:auto 1fr auto; background:#08121D; color:#EAF0F6; opacity:0; pointer-events:none; overscroll-behavior:contain; touch-action:none; transition:opacity .4s var(--ease), visibility 0s .4s}
+.lb{visibility:hidden; position:fixed; inset:0; z-index:25; display:grid; grid-template-rows:auto 1fr auto; background:#06101A; color:#EAF0F6; opacity:0; pointer-events:none; overscroll-behavior:contain; touch-action:none; transition:opacity .4s var(--ease), visibility 0s .4s}
 .lb.open{visibility:visible; opacity:1; pointer-events:auto; transition:opacity .4s var(--ease)}
 .lb .bar-top{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:calc(env(safe-area-inset-top,0px) + 14px) clamp(14px,3vw,28px) 10px}
-.lb .count{font-size:14px; color:rgba(234,240,246,.7); font-variant-numeric:tabular-nums}
+.lb .count{font-family:var(--mono); font-size:13px; color:rgba(234,240,246,.7)}
 .lb .close{width:46px; height:46px; border-radius:50%; display:grid; place-items:center; background:rgba(255,255,255,.08); color:#EAF0F6; transition:background-color .3s, transform .5s var(--spring)}
 .lb .close:hover{background:rgba(255,255,255,.16); transform:rotate(90deg)}
+.lb .close .ic{transform:none}
 .lb .stage{position:relative; display:grid; place-items:center; min-height:0; padding:0 clamp(12px,7vw,110px)}
-.lb .stage img,.lb .stage video{max-width:100%; max-height:calc(100dvh - 190px); width:auto; height:auto; object-fit:contain; border-radius:10px; box-shadow:0 30px 80px -30px rgba(0,0,0,.7); animation:swap .45s var(--ease)}
+.lb .stage img,.lb .stage video{max-width:100%; max-height:calc(100dvh - 190px); width:auto; height:auto; object-fit:contain; border-radius:6px; box-shadow:0 30px 80px -30px rgba(0,0,0,.7); animation:swap .45s var(--ease)}
 @keyframes swap{from{opacity:0; transform:translateY(10px) scale(.985)}}
-.lb .bar-bottom{display:flex; justify-content:center; align-items:center; gap:18px; padding:10px clamp(14px,3vw,28px) calc(env(safe-area-inset-bottom,0px) + 18px)}
+.lb .bar-bottom{display:flex; justify-content:center; align-items:center; padding:10px clamp(14px,3vw,28px) calc(env(safe-area-inset-bottom,0px) + 18px)}
 .lb .cap{margin:0; font-size:15px; color:rgba(234,240,246,.85); text-align:center; max-width:60ch}
 .lb .nav{width:48px; height:48px; flex:none; border-radius:50%; border:1px solid rgba(255,255,255,.18); display:grid; place-items:center; color:#EAF0F6; transition:background-color .3s, color .3s, transform .45s var(--spring)}
 .lb .nav:hover{background:#F4A259; color:#0D1B2A; border-color:#F4A259; transform:scale(1.06)}
 .lb .nav[hidden]{display:none}
-html[dir="rtl"] .lb .nav svg{transform:scaleX(-1)}
 .lb .stage .nav{position:absolute; top:50%; margin-top:-24px}
 .lb .stage .prev{inset-inline-start:clamp(8px,2vw,28px)} .lb .stage .next{inset-inline-end:clamp(8px,2vw,28px)}
 @media (max-width:820px){ .lb .stage{padding:0 12px} .lb .stage .nav{top:auto; bottom:-62px; margin:0} .lb .stage .prev{inset-inline-start:14px} .lb .stage .next{inset-inline-end:14px} .lb .bar-bottom{min-height:74px; padding-inline:76px} }
 html.locked,html.locked body{overflow:hidden}
 
-@media (max-width:1000px){ .reels{grid-template-columns:repeat(2,1fr)} }
-@media (max-width:820px){
-  .sec-head,.client,.about{grid-template-columns:1fr}
-  .client .side{position:static}
-  .gallery > *{grid-column:span 12}
-  .cols{grid-template-columns:1fr 1fr}
-  .about .photo{max-width:300px}
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .films{grid-template-columns:repeat(2,minmax(0,1fr))} .film.wide{grid-column:span 2}
+  .credits{grid-template-columns:1fr 1fr} .credits > div:nth-child(3){border-inline-start:0; padding-inline-start:0} .credits > div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+@media (max-width:860px){
+  .hero,.print,.about{grid-template-columns:1fr}
+  .hero .portrait{max-width:440px}
   .top nav{display:none}
-  .row{grid-template-columns:auto 1fr auto}
-  .row .k{display:none}
+  .expo{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:22px; padding-inline:4px; scrollbar-width:none}
+  .expo::-webkit-scrollbar{display:none}
+  .stand{flex:0 0 58%; scroll-snap-align:center}
+  .ways{grid-template-columns:1fr} .way{border-inline-start:0}
 }
 @media (max-width:560px){
   body{font-size:16px}
-  .more{aspect-ratio:auto; min-height:220px}
-  .posts{grid-template-columns:1fr 1fr}
-  .cols{grid-template-columns:1fr}
-  .showreel{grid-template-columns:1fr 1fr} .showreel .cell:last-child{display:none}
-  .item figcaption{flex-direction:column; gap:2px}
-  .post figcaption{transform:none; font-size:13px; padding:22px 10px 8px}
+  .frames{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec > div{grid-template-columns:1fr; gap:4px}
+  .tri{margin:12px 8px}
+  .tri-cap,.poster figcaption{flex-direction:column; gap:2px}
   .wa{height:52px; padding-inline:14px}
-  .row .copy{display:none}
-  .row{font-size:17px; gap:14px}
+  .copy{display:none}
   footer{padding-bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important} }
-@media print{ .lb,.switch,.wa,.cursor,.peek{display:none} *{animation:none!important} }
-
-/* ---------- Fuad additions ---------- */
-.showreel img{width:100%; aspect-ratio:9/16; object-fit:cover; object-position:50% 0; background:var(--panel); border-radius:14px}
-@media (prefers-reduced-motion:no-preference){ .showreel img{animation:open 1.3s .38s var(--ease) both} }
-.films{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,22px)}
-.films .wide{grid-column:span 2}
-.films .wide .frame{aspect-ratio:16/9}
-.posts .post.sq{aspect-ratio:1}
-.more-title small{display:block; font-family:var(--body); font-size:15px; font-weight:500; margin-top:10px; opacity:.85; letter-spacing:0}
-.r12 .ph{aspect-ratio:1/2} .rbro .ph{aspect-ratio:842/596} .rtaxi .ph{aspect-ratio:3294/4663}
-.c3{grid-column:span 3}
-.logo .sl{stroke:#F4A259}
-@media (max-width:820px){ .gallery > .c3{grid-column:span 6} }
-@media (max-width:560px){ .films{grid-template-columns:1fr 1fr} .posts{grid-template-columns:1fr 1fr} }
+@media print{ .lb,.switch,.wa{display:none} *{animation:none!important} }
 </style>
 </head>
 <body>
@@ -357,9 +367,10 @@ html.locked,html.locked body{overflow:hidden}
     <a class="name" href="#top"><svg class="logo" viewBox="0 0 100 60" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="q1"/><stop offset="1" class="q2"/></linearGradient></defs><path d="M13 50V11h20M13 29.5h15" fill="none" stroke="url(#fg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path class="sl" d="M55 6 43 54" stroke-width="2.6" stroke-linecap="round"/><circle cx="75" cy="30" r="17" fill="none" stroke="currentColor" stroke-width="6"/><path d="M81.5 38.5 90 49" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg><span class="t" lang="en">Fuad Qadan</span><span class="t" lang="ar">فؤاد قعدان</span></a>
     <div class="right">
       <nav aria-label="Sections">
-        <a href="#ourstep"><span class="roll"><span class="t" lang="en">Work</span><span class="t" lang="ar">الأعمال</span></span></a>
-        <a href="#about"><span class="roll"><span class="t" lang="en">About</span><span class="t" lang="ar">نبذة</span></span></a>
-        <a href="#contact"><span class="roll"><span class="t" lang="en">Contact</span><span class="t" lang="ar">تواصل</span></span></a>
+        <a href="#films"><span class="t" lang="en">Films</span><span class="t" lang="ar">الأفلام</span></a>
+        <a href="#print"><span class="t" lang="en">Print</span><span class="t" lang="ar">المطبوعات</span></a>
+        <a href="#ads"><span class="t" lang="en">Ads</span><span class="t" lang="ar">الإعلانات</span></a>
+        <a href="#contact"><span class="t" lang="en">Contact</span><span class="t" lang="ar">تواصل</span></a>
       </nav>
       <div class="switch">
         <button type="button" class="lang-btn" id="lang" aria-label="Switch language"><span class="t" lang="en">عربي</span><span class="t" lang="ar">English</span></button>
@@ -372,169 +383,173 @@ html.locked,html.locked body{overflow:hidden}
   </header>
 
   <main id="top">
-    <section class="intro">
-      <h1><span class="t" lang="en">Design that informs<span class="slash">/</span>and sells.</span><span class="t" lang="ar">تصميم يوعّي<span class="slash">/</span>ويبيع.</span></h1>
-      <p><span class="t" lang="en">I'm a graphic designer and photographer in Amman. I make awareness campaigns, roll-ups and brochures for <b>Our Step Association</b>, product ads for <b>Jabal Ali Computer Trading</b>, and I shoot and edit the video myself.</span><span class="t" lang="ar">مصمم جرافيك ومصوّر في عمّان. أصمم حملات التوعية والرول أب والبروشورات لـ<b>جمعية خطوتنا</b>، وإعلانات المنتجات لـ<b>شركة جبل علي لتجارة لوازم الكمبيوتر</b>، وأصوّر الفيديو وأمنتجه بنفسي.</span></p>
-      <div class="cta-row">
-        <a class="btn solid" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener">
-          <span class="t" lang="en">Message me on WhatsApp</span><span class="t" lang="ar">راسلني على واتساب</span>
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn line" href="#ourstep"><span class="t" lang="en">See the work</span><span class="t" lang="ar">شاهد الأعمال</span>
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
-        </a>
+    <section class="hero">
+      <div>
+        <h1><span class="t" lang="en">Design that informs<span class="slash">/</span>and sells.</span><span class="t" lang="ar">تصميم يوعّي<span class="slash">/</span>ويبيع.</span></h1>
+        <p class="lede"><span class="t" lang="en">I'm a graphic designer and photographer in Amman. I make awareness campaigns, roll-ups and brochures for <b>Our Step Association</b>, product ads for <b>Jabal Ali Computer Trading</b>, and I shoot and edit the video myself.</span><span class="t" lang="ar">مصمم جرافيك ومصوّر في عمّان. أصمم حملات التوعية والرول أب والبروشورات لـ<b>جمعية خطوتنا</b>، وإعلانات المنتجات لـ<b>شركة جبل علي لتجارة لوازم الكمبيوتر</b>، وأصوّر الفيديو وأمنتجه بنفسي.</span></p>
+        <div class="cta">
+          <a class="btn solid" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener"><span class="t" lang="en">Message me on WhatsApp</span><span class="t" lang="ar">راسلني على واتساب</span><span class="knob"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          <a class="btn line" href="#films"><span class="t" lang="en">See the work</span><span class="t" lang="ar">شاهد الأعمال</span></a>
+        </div>
+        <dl class="facts">
+          <div><dt><span class="t" lang="en">Based in</span><span class="t" lang="ar">المدينة</span></dt><dd><span class="t" lang="en">Amman, Jordan</span><span class="t" lang="ar">عمّان، الأردن</span></dd></div>
+          <div><dt><span class="t" lang="en">Working since</span><span class="t" lang="ar">أعمل منذ</span></dt><dd>2017</dd></div>
+          <div><dt><span class="t" lang="en">Languages</span><span class="t" lang="ar">اللغات</span></dt><dd><span class="t" lang="en">Arabic and English</span><span class="t" lang="ar">العربية والإنجليزية</span></dd></div>
+        </dl>
       </div>
+      <figure class="portrait crop">
+        <svg class="reg" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="7"/><path d="M13 0v26M0 13h26"/></svg>
+        <div class="ph"><img src="img/portrait.webp" alt="Portrait of Fuad Qadan" fetchpriority="high"></div>
+        <figcaption><span class="mono">FUAD QADAN</span><span class="mono">1:1 · PORTRAIT</span></figcaption>
+      </figure>
     </section>
 
-    <div class="showreel">
-      <div class="cell" data-cursor-en="Play" data-cursor-ar="تشغيل"><video src="media/v1.mp4" poster="media/v1-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Mental health awareness reel"></video></div>
-      <div class="cell" data-cursor-en="Play" data-cursor-ar="تشغيل"><video src="media/v2.mp4" poster="media/v2-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Illustrated awareness reel"></video></div>
-      <div class="cell pic" data-cursor-en="View" data-cursor-ar="عرض"><img src="img/rollup-sanadak-ar.webp" alt="Sanadak project roll-up in Arabic"></div>
+    <div class="credits">
+      <div><b><span class="t" lang="en">Our Step Association</span><span class="t" lang="ar">جمعية خطوتنا</span></b><span class="w"><span class="t" lang="en">Films, reels, roll-ups, brochures</span><span class="t" lang="ar">أفلام، ريلز، رول أب، بروشورات</span></span></div>
+      <div><b><span class="t" lang="en">Sanadak project</span><span class="t" lang="ar">مشروع سندك</span></b><span class="w"><span class="t" lang="en">Bilingual roll-ups</span><span class="t" lang="ar">رول أب بلغتين</span></span></div>
+      <div><b><span class="t" lang="en">Jabal Ali Computer Trading</span><span class="t" lang="ar">جبل علي لتجارة لوازم الكمبيوتر</span></b><span class="w"><span class="t" lang="en">Product ads, social media sales</span><span class="t" lang="ar">إعلانات المنتجات، البيع عبر السوشال ميديا</span></span></div>
+      <div><b><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></b><span class="w"><span class="t" lang="en">App poster</span><span class="t" lang="ar">ملصق التطبيق</span></span></div>
     </div>
-
-    <div class="clients">
-      <span class="lead"><span class="t" lang="en">Worked with</span><span class="t" lang="ar">عملت مع</span></span>
-      <span data-peek="img/rollup-ourstep-en.webp"><span class="t" lang="en">Our Step Association</span><span class="t" lang="ar">جمعية خطوتنا</span></span>
-      <span data-peek="img/rollup-sanadak-en.webp"><span class="t" lang="en">Sanadak project</span><span class="t" lang="ar">مشروع سندك</span></span>
-      <span data-peek="img/post-iclock.webp"><span class="t" lang="en">Jabal Ali Computer Trading</span><span class="t" lang="ar">جبل علي لتجارة لوازم الكمبيوتر</span></span>
-      <span data-peek="img/work-taxi.webp"><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></span>
-    </div>
-
-    <!-- OUR STEP -->
-    <section class="work" id="ourstep">
-      <div class="client">
-        <div class="side">
-          <h2><span class="t" lang="en">Our Step Association</span><span class="t" lang="ar">جمعية خطوتنا</span></h2>
-          <p><span class="t" lang="en">Our Step supports people with mental disabilities and their families. I've worked with them since 2017 on media, photography, video editing and graphic design, for projects funded by the European Union, USAID and UNDP. The films here are from their mental health work with FSSP in Ma'an, in partnership with Canada.</span><span class="t" lang="ar">تدعم جمعية خطوتنا الأشخاص ذوي الإعاقة النفسية وأسرهم. أعمل معهم منذ 2017 في الإعلام والتصوير والمونتاج والتصميم الجرافيكي، لمشاريع بتمويل من الاتحاد الأوروبي وUSAID وUNDP. الفيديوهات هنا من عملهم في الصحة النفسية مع مشروع FSSP في معان، بالشراكة مع كندا.</span></p>
-          <dl>
-            <dt><span class="t" lang="en">Work</span><span class="t" lang="ar">العمل</span></dt><dd><span class="t" lang="en">Video, awareness reels, roll-ups, brochures</span><span class="t" lang="ar">فيديو، ريلز توعوية، رول أب، بروشورات</span></dd>
-            <dt><span class="t" lang="en">Formats</span><span class="t" lang="ar">المقاسات</span></dt><dd><span class="t" lang="en">16:9 film, 9:16 reels, print</span><span class="t" lang="ar">فيلم 16:9، ريلز 9:16، مطبوعات</span></dd>
-            <dt><span class="t" lang="en">Language</span><span class="t" lang="ar">اللغة</span></dt><dd><span class="t" lang="en">Arabic and English</span><span class="t" lang="ar">العربية والإنجليزية</span></dd>
-          </dl>
-        </div>
-        <div class="films" data-group="films">
-          <article class="reel wide" data-video="media/v3.mp4" data-en="FSSP · Our Step · Project report, Ma'an" data-ar="FSSP · خطوتنا · تقرير المشروع في معان" data-cursor-en="Play" data-cursor-ar="تشغيل">
-            <div class="frame"><video src="media/v3.mp4" poster="media/v3-poster.jpg" muted loop playsinline preload="none"></video><span class="bar"></span><span class="dur">4:06</span></div>
-            <h3><span class="t" lang="en">Project report, Ma'an</span><span class="t" lang="ar">تقرير المشروع في معان</span></h3><p><span class="t" lang="en">FSSP · Our Step</span><span class="t" lang="ar">FSSP · خطوتنا</span></p>
-          </article>
-          <article class="reel" data-video="media/v1.mp4" data-en="Reel · Our Step · Mental health awareness" data-ar="ريل · خطوتنا · توعية بالصحة النفسية" data-cursor-en="Play" data-cursor-ar="تشغيل">
-            <div class="frame"><video src="media/v1.mp4" poster="media/v1-poster.jpg" muted loop playsinline preload="none"></video><span class="bar"></span><span class="dur">0:48</span></div>
-            <h3><span class="t" lang="en">Mental health awareness</span><span class="t" lang="ar">توعية بالصحة النفسية</span></h3><p><span class="t" lang="en">Reel · Our Step</span><span class="t" lang="ar">ريل · خطوتنا</span></p>
-          </article>
-          <article class="reel" data-video="media/v2.mp4" data-en="Reel · Our Step · Illustrated awareness reel" data-ar="ريل · خطوتنا · ريل توعوي مرسوم" data-cursor-en="Play" data-cursor-ar="تشغيل">
-            <div class="frame"><video src="media/v2.mp4" poster="media/v2-poster.jpg" muted loop playsinline preload="none"></video><span class="bar"></span><span class="dur">0:48</span></div>
-            <h3><span class="t" lang="en">Illustrated awareness reel</span><span class="t" lang="ar">ريل توعوي مرسوم</span></h3><p><span class="t" lang="en">Reel · Our Step</span><span class="t" lang="ar">ريل · خطوتنا</span></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- JABAL ALI -->
-    <section class="work" id="jabalali">
-      <div class="client">
-        <div class="side">
-          <h2><span class="t" lang="en">Jabal Ali Computer Trading</span><span class="t" lang="ar">جبل علي لتجارة لوازم الكمبيوتر</span></h2>
-          <p><span class="t" lang="en">Product ads for a computer supplies company in Amman, the official ZKTeco agent in Jordan. I designed the posts and sold through their social media: attendance devices, point-of-sale systems, cameras and accessories, each with the price and the specs a buyer needs.</span><span class="t" lang="ar">إعلانات منتجات لشركة لوازم كمبيوتر في عمّان، الوكيل الرسمي لـ ZKTeco في الأردن. صممت المنشورات وبعت عبر صفحاتهم على السوشال ميديا: أجهزة الحضور والانصراف، وأنظمة نقاط البيع، والكاميرات والإكسسوارات، مع السعر والمواصفات التي يحتاجها المشتري.</span></p>
-          <dl>
-            <dt><span class="t" lang="en">Work</span><span class="t" lang="ar">العمل</span></dt><dd><span class="t" lang="en">Product ads, social media sales</span><span class="t" lang="ar">إعلانات المنتجات، البيع عبر السوشال ميديا</span></dd>
-            <dt><span class="t" lang="en">Formats</span><span class="t" lang="ar">المقاسات</span></dt><dd><span class="t" lang="en">1:1 posts</span><span class="t" lang="ar">منشورات 1:1</span></dd>
-            <dt><span class="t" lang="en">Language</span><span class="t" lang="ar">اللغة</span></dt><dd><span class="t" lang="en">Arabic and English</span><span class="t" lang="ar">العربية والإنجليزية</span></dd>
-          </dl>
-        </div>
-        <div class="posts" data-group="jabal">
-          <figure class="post sq" data-img="img/post-iclock.webp" data-en="ZKTeco iClock 360" data-ar="ZKTeco iClock 360"><img src="img/post-iclock.webp" alt="ZKTeco iClock 360 attendance device ad" loading="lazy"><figcaption><span class="t" lang="en">ZKTeco iClock 360</span><span class="t" lang="ar">ZKTeco iClock 360</span></figcaption></figure>
-          <figure class="post sq" data-img="img/post-iface770.webp" data-en="iFace770 attendance" data-ar="جهاز حضور iFace770"><img src="img/post-iface770.webp" alt="ZKTeco iFace770 attendance device ad with price" loading="lazy"><figcaption><span class="t" lang="en">iFace770 attendance</span><span class="t" lang="ar">جهاز حضور iFace770</span></figcaption></figure>
-          <figure class="post sq" data-img="img/post-zkpos.webp" data-en="Smart point of sale" data-ar="نقاط البيع الذكية"><img src="img/post-zkpos.webp" alt="ZKTeco point of sale system ad" loading="lazy"><figcaption><span class="t" lang="en">Smart point of sale</span><span class="t" lang="ar">نقاط البيع الذكية</span></figcaption></figure>
-          <figure class="post sq" data-img="img/post-c2e2.webp" data-en="C2E2 baby camera" data-ar="كاميرا C2E2"><img src="img/post-c2e2.webp" alt="C2E2 3MP camera ad" loading="lazy"><figcaption><span class="t" lang="en">C2E2 baby camera</span><span class="t" lang="ar">كاميرا C2E2</span></figcaption></figure>
-          <figure class="post sq" data-img="img/post-marsriva.webp" data-en="Marsriva power strip" data-ar="مشترك Marsriva"><img src="img/post-marsriva.webp" alt="Marsriva LC-PS301 power strip ad" loading="lazy"><figcaption><span class="t" lang="en">Marsriva power strip</span><span class="t" lang="ar">مشترك Marsriva</span></figcaption></figure>
-          <a class="more" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener">
-            <span class="more-top">Behance</span>
-            <span class="more-title"><span class="t" lang="en">More work<small>behance.net/fuadqadan</small></span><span class="t" lang="ar">أعمال أكثر<small>behance.net/fuadqadan</small></span></span>
-            <span class="more-go"><span class="t" lang="en">Open</span><span class="t" lang="ar">افتح</span> <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRINT -->
-    <section class="work" id="print">
-      <div class="sec-head">
-        <h2><span class="t" lang="en">Roll-ups, brochures and posters</span><span class="t" lang="ar">رول أب وبروشورات وملصقات</span></h2>
-        <p><span class="t" lang="en">Print for events and awareness work: bilingual roll-ups for Our Step and the Sanadak project, tri-fold brochures on depression and social anxiety, and an app poster for Yellow Taxi.</span><span class="t" lang="ar">مطبوعات للفعاليات والتوعية: رول أب بلغتين لجمعية خطوتنا ومشروع سندك، وبروشورات ثلاثية الطي عن الاكتئاب والقلق الاجتماعي، وملصق تطبيق للتكسي الأصفر.</span></p>
-      </div>
-      <div class="gallery" data-group="print">
-        <figure class="item c3 r12" data-img="img/rollup-sanadak-ar.webp" data-en="Sanadak · Roll-up · Arabic" data-ar="سندك · رول أب · عربي"><div class="ph"><img src="img/rollup-sanadak-ar.webp" alt="Sanadak project roll-up in Arabic with a map of Irbid, Zarqa and Karak" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span></span><span class="sub"><span class="t" lang="en">Roll-up · Arabic</span><span class="t" lang="ar">رول أب · عربي</span></span></figcaption></figure>
-        <figure class="item c3 r12" data-img="img/rollup-sanadak-en.webp" data-en="Sanadak · Roll-up · English" data-ar="سندك · رول أب · إنجليزي"><div class="ph"><img src="img/rollup-sanadak-en.webp" alt="Sanadak project roll-up in English" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span></span><span class="sub"><span class="t" lang="en">Roll-up · English</span><span class="t" lang="ar">رول أب · إنجليزي</span></span></figcaption></figure>
-        <figure class="item c3 r12" data-img="img/rollup-ourstep-ar.webp" data-en="Our Step objectives · Roll-up · Arabic" data-ar="أهداف خطوتنا · رول أب · عربي"><div class="ph"><img src="img/rollup-ourstep-ar.webp" alt="Our Step Association objectives roll-up in Arabic" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span></span><span class="sub"><span class="t" lang="en">Roll-up · Arabic</span><span class="t" lang="ar">رول أب · عربي</span></span></figcaption></figure>
-        <figure class="item c3 r12" data-img="img/rollup-ourstep-en.webp" data-en="Our Step objectives · Roll-up · English" data-ar="أهداف خطوتنا · رول أب · إنجليزي"><div class="ph"><img src="img/rollup-ourstep-en.webp" alt="Our Step Association objectives roll-up in English" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span></span><span class="sub"><span class="t" lang="en">Roll-up · English</span><span class="t" lang="ar">رول أب · إنجليزي</span></span></figcaption></figure>
-        <figure class="item c8 rbro" data-img="img/brochure-dep-out.webp" data-en="Mental health brochures · Tri-fold · depression and social anxiety" data-ar="بروشورات الصحة النفسية · ثلاثي الطي · الاكتئاب والقلق الاجتماعي"><div class="ph slides" data-slides="img/brochure-dep-out.webp,img/brochure-dep-in.webp,img/brochure-anx-out.webp,img/brochure-anx-in.webp"><img src="img/brochure-dep-out.webp" alt="Tri-fold brochure on depression" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Mental health brochures</span><span class="t" lang="ar">بروشورات الصحة النفسية</span></span><span class="sub"><span class="t" lang="en">Tri-fold · depression and social anxiety</span><span class="t" lang="ar">ثلاثي الطي · الاكتئاب والقلق الاجتماعي</span></span></figcaption></figure>
-        <figure class="item c4 rtaxi" data-img="img/work-taxi.webp" data-en="Yellow Taxi · App poster" data-ar="التكسي الأصفر · ملصق تطبيق"><div class="ph"><img src="img/work-taxi.webp" alt="Yellow Taxi app poster" loading="lazy"></div><figcaption><span class="ul"><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></span><span class="sub"><span class="t" lang="en">App poster</span><span class="t" lang="ar">ملصق تطبيق</span></span></figcaption></figure>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="work" id="about">
-      <div class="about">
-        <div class="photo"><img src="img/avatar.webp" alt="Portrait of Fuad Qadan"></div>
-        <div>
-          <p class="lead"><span class="t" lang="en">Graphic designer and photographer since 2017, for a nonprofit, a computer supplies company and a taxi app. <span class="soft">I shoot the photos and video, edit them, and design the print and social media around them.</span></span><span class="t" lang="ar">مصمم جرافيك ومصوّر منذ 2017، لجمعية أهلية وشركة لوازم كمبيوتر وتطبيق تكسي. <span class="soft">أصوّر الصور والفيديو، وأمنتجها، وأصمم المطبوعات ومنشورات السوشال ميديا حولها.</span></span></p>
-          <div class="cols">
-            <div><h3><span class="t" lang="en">What I do</span><span class="t" lang="ar">ماذا أقدّم</span></h3><ul>
-              <li><span class="t" lang="en">Graphic design</span><span class="t" lang="ar">التصميم الجرافيكي</span></li>
-              <li><span class="t" lang="en">Social media ads</span><span class="t" lang="ar">إعلانات السوشال ميديا</span></li>
-              <li><span class="t" lang="en">Roll-ups, banners and brochures</span><span class="t" lang="ar">الرول أب والبانرات والبروشورات</span></li>
-              <li><span class="t" lang="en">Photography with DSLR cameras</span><span class="t" lang="ar">التصوير بكاميرات DSLR</span></li>
-              <li><span class="t" lang="en">Video editing</span><span class="t" lang="ar">مونتاج الفيديو</span></li>
-              <li><span class="t" lang="en">Computer maintenance and networks</span><span class="t" lang="ar">صيانة الحاسوب والشبكات</span></li></ul></div>
-            <div><h3><span class="t" lang="en">Tools</span><span class="t" lang="ar">الأدوات</span></h3><ul><li>Adobe Photoshop</li><li>Adobe Premiere Pro</li><li>Microsoft Office</li><li><span class="t" lang="en">DSLR cameras</span><span class="t" lang="ar">كاميرات DSLR</span></li></ul></div>
-            <div><h3><span class="t" lang="en">Award and training</span><span class="t" lang="ar">الجائزة والتدريب</span></h3><ul>
-              <li><span class="t" lang="en">Best Video Maker Talent Award, first place<small>Jordanian Ministry of Culture</small></span><span class="t" lang="ar">جائزة أفضل صانع فيديو، المركز الأول<small>وزارة الثقافة الأردنية</small></span></li>
-              <li><span class="t" lang="en">Training diploma, Graphic Design</span><span class="t" lang="ar">دبلوم تدريبي، التصميم الجرافيكي</span></li>
-              <li><span class="t" lang="en">Training diploma, Computer Maintenance and Networks<small>Professional level, E-TVET Council</small></span><span class="t" lang="ar">دبلوم تدريبي، صيانة الحاسوب والشبكات<small>المستوى المهني، مجلس التشغيل والتدريب والتعليم المهني والتقني</small></span></li></ul></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <h2><span class="t" lang="en">Let's work together.</span><span class="t" lang="ar">لنعمل معًا.</span></h2>
-      <p class="lede"><span class="t" lang="en">Open to full-time roles and freelance projects in Amman or remote. WhatsApp is the fastest way to reach me.</span><span class="t" lang="ar">متاح لوظائف بدوام كامل ولمشاريع حرة، في عمّان أو عن بُعد. واتساب هو الأسرع للتواصل معي.</span></p>
-      <div class="links">
-        <a class="row" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 20.5 11.8z"/><path d="M9.2 8.6c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c.5 1 1.3 1.8 2.3 2.3l.6-.5c.2-.2.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.4c0 .3-.1.6-.5.9-.5.3-1.2.4-1.8.3a6.4 6.4 0 0 1-5-5c-.1-.6 0-1.3.3-1.8z"/></svg>
-          <span class="v">WhatsApp · +962 79 537 8943</span><span class="k"><span class="t" lang="en">Message</span><span class="t" lang="ar">راسلني</span></span>
-          <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="row" href="tel:+962795378943">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.5l1.6 4-2.2 1.4a11 11 0 0 0 6.7 6.7l1.4-2.2 4 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16 16 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4z"/></svg>
-          <span class="v">+962 79 537 8943 · +962 78 916 6556</span><span class="k"><span class="t" lang="en">Call</span><span class="t" lang="ar">اتصال</span></span>
-          <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="row" href="mailto:fuadqadan22@gmail.com">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
-          <span class="v">fuadqadan22@gmail.com</span><button type="button" class="copy" data-copy="fuadqadan22@gmail.com"><span class="t" lang="en">Copy</span><span class="t" lang="ar">نسخ</span></button>
-          <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-        <a class="row" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener">
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h4.8a2.6 2.6 0 0 1 0 5.2H3.5zM3.5 11.7h5.4a2.9 2.9 0 0 1 0 5.8H3.5zM14 13.6h6.8a3.4 3.4 0 1 0-1 2.6M15 7.5h4.6"/></svg>
-          <span class="v">fuadqadan</span><span class="k">Behance</span>
-          <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-      </div>
-    </section>
   </main>
-
-  <footer><span class="brand"><svg class="logo sm" viewBox="0 0 100 60" aria-hidden="true"><defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="q1"/><stop offset="1" class="q2"/></linearGradient></defs><path d="M13 50V11h20M13 29.5h15" fill="none" stroke="url(#fg2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path class="sl" d="M55 6 43 54" stroke-width="2.6" stroke-linecap="round"/><circle cx="75" cy="30" r="17" fill="none" stroke="currentColor" stroke-width="6"/><path d="M81.5 38.5 90 49" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg> Fuad Qadan</span><span><span class="t" lang="en">© 2026 Fuad Qadan</span><span class="t" lang="ar">© 2026 فؤاد قعدان</span></span><span><span class="t" lang="en">Portfolio PDF: <a class="ul" href="pdf/Fuad_Qadan_Portfolio_EN.pdf" target="_blank" rel="noopener">English</a> · <a class="ul" href="pdf/Fuad_Qadan_Portfolio_AR.pdf" target="_blank" rel="noopener">العربية</a></span><span class="t" lang="ar">ملف الأعمال PDF: <a class="ul" href="pdf/Fuad_Qadan_Portfolio_AR.pdf" target="_blank" rel="noopener">العربية</a> · <a class="ul" href="pdf/Fuad_Qadan_Portfolio_EN.pdf" target="_blank" rel="noopener">English</a></span></span><a class="ul" href="#top"><span class="t" lang="en">Back to top</span><span class="t" lang="ar">إلى الأعلى</span></a></footer>
 </div>
 
-<a class="wa" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.2z"/></svg>
-  <span><span class="t" lang="en">Chat on WhatsApp</span><span class="t" lang="ar">تواصل عبر واتساب</span></span>
-</a>
+<section class="screen" id="films">
+  <div class="wrap">
+    <div class="head">
+      <div class="line"><h2><span class="t" lang="en">Films for Our Step</span><span class="t" lang="ar">أفلام لجمعية خطوتنا</span></h2></div>
+      <p><span class="t" lang="en">Our Step supports people with mental disabilities and their families. I've worked with them since 2017 on media, photography, video and design, for projects funded by the European Union, USAID and UNDP. These are from their mental health work with FSSP in Ma'an, in partnership with Canada.</span><span class="t" lang="ar">تدعم جمعية خطوتنا الأشخاص ذوي الإعاقة النفسية وأسرهم. أعمل معهم منذ 2017 في الإعلام والتصوير والفيديو والتصميم، لمشاريع بتمويل من الاتحاد الأوروبي وUSAID وUNDP. هذه الأعمال من مشروعهم للصحة النفسية مع FSSP في معان، بالشراكة مع كندا.</span></p>
+    </div>
+    <div class="films" data-group="films">
+        <article class="film wide" data-video="media/v3.mp4" data-en="Project report, Ma'an · FSSP · Our Step · 16:9" data-ar="تقرير المشروع في معان · FSSP · خطوتنا · 16:9" tabindex="0" role="button" aria-label="Project report, Ma'an">
+          <div class="frame"><video src="media/v3.mp4" poster="media/v3-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">4:06</span></div>
+          <h3><span class="t" lang="en">Project report, Ma'an</span><span class="t" lang="ar">تقرير المشروع في معان</span></h3><p><span class="t" lang="en">FSSP · Our Step · 16:9</span><span class="t" lang="ar">FSSP · خطوتنا · 16:9</span></p>
+        </article>
+        <article class="film" data-video="media/v1.mp4" data-en="Mental health awareness · Reel · 9:16" data-ar="توعية بالصحة النفسية · ريل · 9:16" tabindex="0" role="button" aria-label="Mental health awareness">
+          <div class="frame"><video src="media/v1.mp4" poster="media/v1-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">0:48</span></div>
+          <h3><span class="t" lang="en">Mental health awareness</span><span class="t" lang="ar">توعية بالصحة النفسية</span></h3><p><span class="t" lang="en">Reel · 9:16</span><span class="t" lang="ar">ريل · 9:16</span></p>
+        </article>
+        <article class="film" data-video="media/v2.mp4" data-en="Illustrated reel · Reel · 9:16" data-ar="ريل مرسوم · ريل · 9:16" tabindex="0" role="button" aria-label="Illustrated reel">
+          <div class="frame"><video src="media/v2.mp4" poster="media/v2-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">0:48</span></div>
+          <h3><span class="t" lang="en">Illustrated reel</span><span class="t" lang="ar">ريل مرسوم</span></h3><p><span class="t" lang="en">Reel · 9:16</span><span class="t" lang="ar">ريل · 9:16</span></p>
+        </article>
+    </div>
+  </div>
+</section>
 
-<div class="cursor" aria-hidden="true"></div>
-<div class="peek" aria-hidden="true"><img src="img/rollup-ourstep-en.webp" alt=""></div>
+<section class="expo-wall" id="print">
+  <div class="wrap">
+    <div class="head">
+      <div class="line"><h2><span class="t" lang="en">Roll-ups on the floor</span><span class="t" lang="ar">رول أب على أرض المعرض</span></h2></div>
+      <p><span class="t" lang="en">Bilingual roll-ups for Our Step and the Sanadak project, a program for the protection and inclusion of vulnerable adolescents in Irbid, Zarqa and Karak.</span><span class="t" lang="ar">رول أب بلغتين لجمعية خطوتنا ولمشروع سندك، وهو برنامج لحماية وإدماج المراهقين المستضعفين في إربد والزرقاء والكرك.</span></p>
+    </div>
+    <div class="expo" data-group="rollups">
+        <figure class="stand" data-img="img/rollup-sanadak-ar.webp" data-en="Sanadak · Arabic" data-ar="سندك · عربي" tabindex="0">
+          <div class="sheet"><img src="img/rollup-sanadak-ar.webp" alt="Sanadak project roll-up in Arabic with a map of Irbid, Zarqa and Karak" loading="lazy"></div><div class="base"></div><div class="floor"></div>
+          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span><span class="mono">ARABIC · 1:2</span></figcaption>
+        </figure>
+        <figure class="stand" data-img="img/rollup-sanadak-en.webp" data-en="Sanadak · English" data-ar="سندك · إنجليزي" tabindex="0">
+          <div class="sheet"><img src="img/rollup-sanadak-en.webp" alt="Sanadak project roll-up in English" loading="lazy"></div><div class="base"></div><div class="floor"></div>
+          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span><span class="mono">ENGLISH · 1:2</span></figcaption>
+        </figure>
+        <figure class="stand" data-img="img/rollup-ourstep-ar.webp" data-en="Our Step objectives · Arabic" data-ar="أهداف خطوتنا · عربي" tabindex="0">
+          <div class="sheet"><img src="img/rollup-ourstep-ar.webp" alt="Our Step Association objectives roll-up in Arabic" loading="lazy"></div><div class="base"></div><div class="floor"></div>
+          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span><span class="mono">ARABIC · 1:2</span></figcaption>
+        </figure>
+        <figure class="stand" data-img="img/rollup-ourstep-en.webp" data-en="Our Step objectives · English" data-ar="أهداف خطوتنا · إنجليزي" tabindex="0">
+          <div class="sheet"><img src="img/rollup-ourstep-en.webp" alt="Our Step Association objectives roll-up in English" loading="lazy"></div><div class="base"></div><div class="floor"></div>
+          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span><span class="mono">ENGLISH · 1:2</span></figcaption>
+        </figure>
+    </div>
+  </div>
+  <div class="expo-floor"></div>
+</section>
+
+<div class="wrap">
+  <section class="block" id="brochures">
+    <div class="head">
+      <div class="line"><h2><span class="t" lang="en">Brochures and a poster</span><span class="t" lang="ar">بروشورات وملصق</span></h2></div>
+      <p><span class="t" lang="en">A4 tri-fold brochures on depression and social anxiety for Our Step's awareness sessions. Hover to fold, click to read. Next to them, an app poster for Yellow Taxi.</span><span class="t" lang="ar">بروشورات A4 ثلاثية الطي عن الاكتئاب والقلق الاجتماعي لجلسات التوعية في جمعية خطوتنا. مرّر المؤشر لطيّها، واضغط للقراءة. وبجانبها ملصق تطبيق التكسي الأصفر.</span></p>
+    </div>
+    <div class="print">
+      <div>
+        <div class="controls">
+          <div class="seg" role="group" aria-label="Topic">
+            <button type="button" data-topic="dep" aria-pressed="true"><span class="t" lang="en">Depression</span><span class="t" lang="ar">الاكتئاب</span></button>
+            <button type="button" data-topic="anx" aria-pressed="false"><span class="t" lang="en">Social anxiety</span><span class="t" lang="ar">القلق الاجتماعي</span></button>
+          </div>
+          <div class="seg" role="group" aria-label="Side">
+            <button type="button" data-side="out" aria-pressed="true"><span class="t" lang="en">Outside</span><span class="t" lang="ar">الخارج</span></button>
+            <button type="button" data-side="in" aria-pressed="false"><span class="t" lang="en">Inside</span><span class="t" lang="ar">الداخل</span></button>
+          </div>
+        </div>
+        <div class="tri crop" id="tri" role="button" tabindex="0" aria-label="Open the brochure" data-img="img/brochure-dep-out.webp" data-en="Depression brochure · outside" data-ar="بروشور الاكتئاب · الخارج">
+          <div class="p"></div><div class="p"></div><div class="p"></div>
+        </div>
+        <div class="tri-cap"><span><span class="t" lang="en">Mental health brochures</span><span class="t" lang="ar">بروشورات الصحة النفسية</span></span><span class="mono">A4 · TRI-FOLD · AR</span></div>
+      </div>
+      <figure class="poster crop" data-img="img/work-taxi.webp" data-en="Yellow Taxi · app poster" data-ar="التكسي الأصفر · ملصق التطبيق" tabindex="0">
+        <div class="ph"><img src="img/work-taxi.webp" alt="Yellow Taxi app poster" loading="lazy"></div>
+        <figcaption><span><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></span><span class="mono">POSTER · RIDER + CAPTAIN</span></figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<section class="sheet-band" id="ads">
+  <div class="wrap">
+    <div class="head">
+      <div class="line"><h2><span class="t" lang="en">Jabal Ali, the contact sheet</span><span class="t" lang="ar">جبل علي، ورقة الإعلانات</span></h2></div>
+      <p><span class="t" lang="en">Product ads for a computer supplies company in Amman, the official ZKTeco agent in Jordan. I designed the posts and sold through their social media: attendance devices, point-of-sale systems, cameras and accessories, each with the price and the specs a buyer needs.</span><span class="t" lang="ar">إعلانات منتجات لشركة لوازم كمبيوتر في عمّان، الوكيل الرسمي لـ ZKTeco في الأردن. صممت المنشورات وبعت عبر صفحاتهم على السوشال ميديا: أجهزة الحضور والانصراف، وأنظمة نقاط البيع، والكاميرات والإكسسوارات، مع السعر والمواصفات التي يحتاجها المشتري.</span></p>
+    </div>
+    <div class="contact-sheet">
+      <div class="edge mono"><span>JABAL ALI COMPUTER TRADING</span><span>1:1 · SOCIAL</span></div>
+      <div class="frames" data-group="ads">
+          <figure class="fr" data-img="img/post-iclock.webp" data-en="ZKTeco iClock 360" data-ar="ZKTeco iClock 360" tabindex="0"><div class="img"><img src="img/post-iclock.webp" alt="ZKTeco iClock 360 attendance device ad" loading="lazy"></div><figcaption><span class="mono">01</span><span class="t" lang="en">ZKTeco iClock 360</span><span class="t" lang="ar">ZKTeco iClock 360</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-iface770.webp" data-en="iFace770 attendance" data-ar="جهاز حضور iFace770" tabindex="0"><div class="img"><img src="img/post-iface770.webp" alt="ZKTeco iFace770 attendance device ad with price" loading="lazy"></div><figcaption><span class="mono">02</span><span class="t" lang="en">iFace770 attendance</span><span class="t" lang="ar">جهاز حضور iFace770</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-zkpos.webp" data-en="Smart point of sale" data-ar="نقاط البيع الذكية" tabindex="0"><div class="img"><img src="img/post-zkpos.webp" alt="ZKTeco point of sale system ad" loading="lazy"></div><figcaption><span class="mono">03</span><span class="t" lang="en">Smart point of sale</span><span class="t" lang="ar">نقاط البيع الذكية</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-c2e2.webp" data-en="C2E2 camera" data-ar="كاميرا C2E2" tabindex="0"><div class="img"><img src="img/post-c2e2.webp" alt="C2E2 3MP camera ad" loading="lazy"></div><figcaption><span class="mono">04</span><span class="t" lang="en">C2E2 camera</span><span class="t" lang="ar">كاميرا C2E2</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-marsriva.webp" data-en="Marsriva power strip" data-ar="مشترك Marsriva" tabindex="0"><div class="img"><img src="img/post-marsriva.webp" alt="Marsriva LC-PS301 power strip ad" loading="lazy"></div><figcaption><span class="mono">05</span><span class="t" lang="en">Marsriva power strip</span><span class="t" lang="ar">مشترك Marsriva</span></figcaption></figure>
+          <a class="fr more" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener"><div class="img"><span class="mono">06</span><span class="t1"><span class="t" lang="en">More on Behance</span><span class="t" lang="ar">أعمال أكثر على Behance</span></span><span class="go"><span class="t" lang="en">Open</span><span class="t" lang="ar">افتح</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div><figcaption><span class="mono">06</span>Behance</figcaption></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="block" id="about">
+    <div class="about">
+      <p class="lead"><span class="t" lang="en">Graphic designer and photographer since 2017, for a nonprofit, a computer supplies company and a taxi app. <span class="soft">I shoot the photos and video, edit them, and design the print and social media around them.</span></span><span class="t" lang="ar">مصمم جرافيك ومصوّر منذ 2017، لجمعية أهلية وشركة لوازم كمبيوتر وتطبيق تكسي. <span class="soft">أصوّر الصور والفيديو، وأمنتجها، وأصمم المطبوعات ومنشورات السوشال ميديا حولها.</span></span></p>
+      <dl class="spec">
+        <div><dt><span class="t" lang="en">What I do</span><span class="t" lang="ar">ماذا أقدّم</span></dt><dd><ul>
+          <li><span class="t" lang="en">Graphic design and social media ads</span><span class="t" lang="ar">التصميم الجرافيكي وإعلانات السوشال ميديا</span></li>
+          <li><span class="t" lang="en">Roll-ups, banners and brochures</span><span class="t" lang="ar">الرول أب والبانرات والبروشورات</span></li>
+          <li><span class="t" lang="en">Photography with DSLR cameras</span><span class="t" lang="ar">التصوير بكاميرات DSLR</span></li>
+          <li><span class="t" lang="en">Video editing</span><span class="t" lang="ar">مونتاج الفيديو</span></li>
+          <li><span class="t" lang="en">Computer maintenance and networks</span><span class="t" lang="ar">صيانة الحاسوب والشبكات</span></li></ul></dd></div>
+        <div><dt><span class="t" lang="en">Tools</span><span class="t" lang="ar">الأدوات</span></dt><dd>Adobe Photoshop, Adobe Premiere Pro, Microsoft Office</dd></div>
+        <div><dt><span class="t" lang="en">Award</span><span class="t" lang="ar">الجائزة</span></dt><dd><span class="t" lang="en">Best Video Maker Talent Award, first place<small>Jordanian Ministry of Culture</small></span><span class="t" lang="ar">جائزة أفضل صانع فيديو، المركز الأول<small>وزارة الثقافة الأردنية</small></span></dd></div>
+        <div><dt><span class="t" lang="en">Training</span><span class="t" lang="ar">التدريب</span></dt><dd><ul>
+          <li><span class="t" lang="en">Training diploma, Graphic Design</span><span class="t" lang="ar">دبلوم تدريبي، التصميم الجرافيكي</span></li>
+          <li><span class="t" lang="en">Training diploma, Computer Maintenance and Networks<small>Professional level, E-TVET Council</small></span><span class="t" lang="ar">دبلوم تدريبي، صيانة الحاسوب والشبكات<small>المستوى المهني، مجلس التشغيل والتدريب والتعليم المهني والتقني</small></span></li></ul></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2><span class="t" lang="en">Let's work together.</span><span class="t" lang="ar">لنعمل معًا.</span></h2>
+    <p class="lede"><span class="t" lang="en">Open to full-time roles and freelance projects in Amman or remote. WhatsApp is the fastest way to reach me.</span><span class="t" lang="ar">متاح لوظائف بدوام كامل ولمشاريع حرة، في عمّان أو عن بُعد. واتساب هو الأسرع للتواصل معي.</span></p>
+    <div class="mail"><a href="mailto:fuadqadan22@gmail.com">fuadqadan22@gmail.com</a><button type="button" class="copy" data-copy="fuadqadan22@gmail.com"><span class="t" lang="en">Copy email</span><span class="t" lang="ar">نسخ الإيميل</span></button></div>
+    <div class="ways">
+      <a class="way" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener"><span class="k">WhatsApp <svg class="ic a" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="v">+962 79 537 8943</span></a>
+      <a class="way" href="tel:+962789166556"><span class="k"><span class="t" lang="en">Second number</span><span class="t" lang="ar">الرقم الثاني</span> <svg class="ic a" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="v">+962 78 916 6556</span></a>
+      <a class="way" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener"><span class="k">Behance <svg class="ic a" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="v">fuadqadan</span></a>
+    </div>
+  </section>
+
+  <footer><span class="brand"><svg class="logo sm" viewBox="0 0 100 60" aria-hidden="true"><defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="q1"/><stop offset="1" class="q2"/></linearGradient></defs><path d="M13 50V11h20M13 29.5h15" fill="none" stroke="url(#fg2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path class="sl" d="M55 6 43 54" stroke-width="2.6" stroke-linecap="round"/><circle cx="75" cy="30" r="17" fill="none" stroke="currentColor" stroke-width="6"/><path d="M81.5 38.5 90 49" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg> Fuad Qadan</span><span><span class="t" lang="en">© 2026 Fuad Qadan</span><span class="t" lang="ar">© 2026 فؤاد قعدان</span></span><span><span class="t" lang="en">Portfolio PDF: <a href="pdf/Fuad_Qadan_Portfolio_EN.pdf" target="_blank" rel="noopener">English</a> · <a href="pdf/Fuad_Qadan_Portfolio_AR.pdf" target="_blank" rel="noopener">العربية</a></span><span class="t" lang="ar">ملف الأعمال PDF: <a href="pdf/Fuad_Qadan_Portfolio_AR.pdf" target="_blank" rel="noopener">العربية</a> · <a href="pdf/Fuad_Qadan_Portfolio_EN.pdf" target="_blank" rel="noopener">English</a></span></span><a href="#top"><span class="t" lang="en">Back to top</span><span class="t" lang="ar">إلى الأعلى</span></a></footer>
+</div>
+
+<a class="wa" data-wa href="https://wa.me/962795378943" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.2z"/></svg><span><span class="t" lang="en">Chat on WhatsApp</span><span class="t" lang="ar">تواصل عبر واتساب</span></span></a>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Preview" aria-hidden="true" inert>
   <div class="bar-top"><span class="count" dir="ltr"></span>
@@ -551,85 +566,59 @@ html.locked,html.locked body{overflow:hidden}
   var store = function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} };
   var L = function () { return root.lang === 'ar' ? 'ar' : 'en'; };
 
-  // WhatsApp links carry a ready-made first message in the visitor's language
   var waText = { en: "Hi Fuad, I saw your portfolio and I'd like to talk about a project.", ar: 'مرحبا فؤاد، شفت ملف أعمالك وحاب نحكي عن مشروع.' };
   function setWa() { document.querySelectorAll('[data-wa]').forEach(function (a) { a.href = 'https://wa.me/962795378943?text=' + encodeURIComponent(waText[L()]); }); }
-
-  // language
   var titleFor = { en: 'Fuad Qadan · Graphic Designer & Photographer', ar: 'فؤاد قعدان · مصمم جرافيك ومصوّر' };
   function setLang(l) { root.lang = l; root.dir = l === 'ar' ? 'rtl' : 'ltr'; document.title = titleFor[l]; store('fq-lang', l); setWa(); }
   document.getElementById('lang').addEventListener('click', function () { setLang(L() === 'ar' ? 'en' : 'ar'); });
   document.title = titleFor[L()]; setWa();
-
-  // theme
   document.getElementById('theme').addEventListener('click', function () {
     var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
     var next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next); store('fq-theme', next);
   });
 
-  // cursor label that follows the pointer over media, and client preview images
-  var cur = document.querySelector('.cursor'), peek = document.querySelector('.peek'), peekImg = peek.querySelector('img');
-  if (fine && !reduce) {
-    var mx = -999, my = -999, cx = mx, cy = my, px = mx, py = my, curOn = false, peekOn = false, raf = 0;
-    var tick = function () {
-      cx += (mx - cx) * .22; cy += (my - cy) * .22; px += (mx - px) * .12; py += (my - py) * .12;
-      cur.style.transform = 'translate3d(' + cx + 'px,' + cy + 'px,0) scale(' + (curOn ? 1 : 0) + ')';
-      peek.style.transform = 'translate3d(' + (px + 18) + 'px,' + (py - 262) + 'px,0) rotate(' + ((mx - px) * .05 - 4) + 'deg) scale(' + (peekOn ? 1 : .85) + ')';
-      raf = (curOn || peekOn || Math.abs(mx - cx) > .5) ? requestAnimationFrame(tick) : 0;
-    };
-    var wake = function () { if (!raf) raf = requestAnimationFrame(tick); };
-    addEventListener('pointermove', function (e) { mx = e.clientX; my = e.clientY; wake(); }, { passive: true });
-    document.querySelectorAll('[data-cursor-en], .post, .item[data-img]').forEach(function (el) {
-      el.addEventListener('pointerenter', function () {
-        cur.textContent = el.dataset['cursor' + (L() === 'ar' ? 'Ar' : 'En')] || (L() === 'ar' ? 'عرض' : 'View');
-        curOn = true; cur.classList.add('on'); wake();
-      });
-      el.addEventListener('pointerleave', function () { curOn = false; cur.classList.remove('on'); wake(); });
-    });
-    document.querySelectorAll('[data-peek]').forEach(function (el) {
-      el.addEventListener('pointerenter', function () { peekImg.src = el.dataset.peek; peekOn = true; peek.classList.add('on'); wake(); });
-      el.addEventListener('pointerleave', function () { peekOn = false; peek.classList.remove('on'); wake(); });
-    });
-  }
-
-  // gentle 3D tilt on the product posts
-  if (fine && !reduce) document.querySelectorAll('.post').forEach(function (p) {
-    p.addEventListener('pointermove', function (e) {
-      var r = p.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
-      p.style.transform = 'rotateY(' + (x * 8) + 'deg) rotateX(' + (-y * 8) + 'deg) translateY(-4px)';
-    });
-    p.addEventListener('pointerleave', function () { p.style.transform = ''; });
-  });
-
-  // reels: preview on hover with a progress bar; play in view on touch
-  var reels = [].slice.call(document.querySelectorAll('.reel:not(.still)'));
-  document.querySelectorAll('.reel.still').forEach(function (c) { c.tabIndex = 0; c.addEventListener('keydown', function (e) { if (e.key === 'Enter') c.click(); }); });
-  reels.forEach(function (r) {
-    var v = r.querySelector('video'), bar = r.querySelector('.bar');
+  // films: hover to preview with a progress bar, play in view on touch, click to watch with sound
+  var films = [].slice.call(document.querySelectorAll('.film'));
+  films.forEach(function (f) {
+    var v = f.querySelector('video'), bar = f.querySelector('.bar');
     v.addEventListener('timeupdate', function () { if (v.duration) bar.style.transform = 'scaleX(' + (v.currentTime / v.duration) + ')'; });
     if (fine) {
-      r.addEventListener('pointerenter', function () { v.preload = 'auto'; var p = v.play(); if (p) p.catch(function () {}); });
-      r.addEventListener('pointerleave', function () { v.pause(); });
+      f.addEventListener('pointerenter', function () { v.preload = 'auto'; f.classList.add('playing'); var p = v.play(); if (p) p.catch(function () {}); });
+      f.addEventListener('pointerleave', function () { v.pause(); f.classList.remove('playing'); });
     }
-    r.tabIndex = 0; r.setAttribute('role', 'button');
-    r.addEventListener('click', function () { openAt(reels, reels.indexOf(r)); });
-    r.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); r.click(); } });
+    f.addEventListener('click', function () { openAt(films, films.indexOf(f)); });
+    f.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); f.click(); } });
   });
   if (!fine && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { var v = e.target.querySelector('video'); if (e.isIntersecting) { v.preload = 'auto'; var p = v.play(); if (p) p.catch(function () {}); } else v.pause(); });
     }, { threshold: .6 });
-    reels.forEach(function (r) { io.observe(r); });
+    films.forEach(function (f) { io.observe(f); });
   }
-  document.querySelectorAll('.showreel .cell').forEach(function (c, i) {
-    c.style.cursor = 'pointer';
-    if (c.classList.contains('pic')) { c.addEventListener('click', function () { var t = document.querySelector('#print [data-img="img/rollup-sanadak-ar.webp"]'); if (t) t.click(); }); return; }
-    c.addEventListener('click', function () {
-      var src = c.querySelector('video').getAttribute('src');
-      var idx = reels.findIndex(function (r) { return r.dataset.video === src; });
-      openAt(reels, Math.max(0, idx));
+
+  // brochure: topic and side switch the printed sheet across the three panels
+  var tri = document.getElementById('tri'), topic = 'dep', side = 'out';
+  var names = { dep: ['Depression brochure', 'بروشور الاكتئاب'], anx: ['Social anxiety brochure', 'بروشور القلق الاجتماعي'] };
+  var sides = { out: ['outside', 'الخارج'], in: ['inside', 'الداخل'] };
+  function paintTri() {
+    var src = 'img/brochure-' + topic + '-' + side + '.webp';
+    tri.querySelectorAll('.p').forEach(function (p) { p.style.backgroundImage = 'url(' + src + ')'; });
+    tri.dataset.img = src; tri.dataset.en = names[topic][0] + ' · ' + sides[side][0]; tri.dataset.ar = names[topic][1] + ' · ' + sides[side][1];
+  }
+  document.querySelectorAll('[data-topic],[data-side]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var g = b.parentNode; g.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      if (b.dataset.topic) topic = b.dataset.topic; else side = b.dataset.side; paintTri();
     });
   });
+  paintTri();
+  ['dep', 'anx'].forEach(function (t) { ['out', 'in'].forEach(function (s) { var i = new Image(); i.src = 'img/brochure-' + t + '-' + s + '.webp'; }); });
+  var broch = ['dep-out', 'dep-in', 'anx-out', 'anx-in'];
+  tri.addEventListener('click', function () {
+    var items = broch.map(function (k) { var t = k.split('-'); var d = document.createElement('div'); d.dataset.img = 'img/brochure-' + k + '.webp'; d.dataset.en = names[t[0]][0] + ' · ' + sides[t[1]][0]; d.dataset.ar = names[t[0]][1] + ' · ' + sides[t[1]][1]; return d; });
+    openAt(items, broch.indexOf(topic + '-' + side));
+  });
+  tri.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tri.click(); } });
 
   // viewer: full-screen, page scroll locked (iOS-safe), arrows, keyboard, swipe, swipe-down to close
   var lb = document.getElementById('lb'), inner = lb.querySelector('.inner'), prev = lb.querySelector('.prev'), next = lb.querySelector('.next');
@@ -646,19 +635,15 @@ html.locked,html.locked body{overflow:hidden}
     countEl.textContent = list.length > 1 ? (at + 1) + ' / ' + list.length : '';
     prev.hidden = next.hidden = list.length < 2;
   }
-  function lock() {
-    savedY = scrollY; root.classList.add('locked');
-    document.body.style.position = 'fixed'; document.body.style.top = -savedY + 'px'; document.body.style.width = '100%';
-  }
+  function lock() { savedY = scrollY; root.classList.add('locked'); document.body.style.position = 'fixed'; document.body.style.top = -savedY + 'px'; document.body.style.width = '100%'; }
   function unlock() {
-    root.classList.remove('locked');
-    document.body.style.position = ''; document.body.style.top = ''; document.body.style.width = '';
+    root.classList.remove('locked'); document.body.style.position = ''; document.body.style.top = ''; document.body.style.width = '';
     var sb = root.style.scrollBehavior; root.style.scrollBehavior = 'auto'; scrollTo(0, savedY); root.style.scrollBehavior = sb;
   }
   function openAt(items, i) {
+    films.forEach(function (f) { f.querySelector('video').pause(); });
     list = items; at = i; render(); lock();
-    lb.inert = false; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
-    lb.querySelector('.close').focus();
+    lb.inert = false; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); lb.querySelector('.close').focus();
   }
   function step(d) { var v = inner.querySelector('video'); if (v) v.pause(); at = (at + d + list.length) % list.length; render(); }
   function close() {
@@ -684,25 +669,19 @@ html.locked,html.locked body{overflow:hidden}
     if (Math.abs(dx) < 50 || list.length < 2) return;
     var forward = root.dir === 'rtl' ? dx > 0 : dx < 0; step(forward ? 1 : -1);
   });
-  document.querySelectorAll('[data-group]').forEach(function (g) {
+  document.querySelectorAll('[data-group="rollups"], [data-group="ads"]').forEach(function (g) {
     var items = [].slice.call(g.querySelectorAll('[data-img]'));
-    items.forEach(function (el, i) { el.addEventListener('click', function () { openAt(items, i); }); });
+    items.forEach(function (el, i) {
+      el.addEventListener('click', function () { openAt(items, i); });
+      el.addEventListener('keydown', function (e) { if (e.key === 'Enter') openAt(items, i); });
+    });
   });
-
-
-  // slideshows: cross-fade through a project's pages, pause while hovered
-  document.querySelectorAll('.slides').forEach(function (box) {
-    var srcs = box.dataset.slides.split(','), fig = box.closest('[data-img]'), first = box.querySelector('img');
-    var imgs = [first].concat(srcs.slice(1).map(function (src) { var i = new Image(); i.src = src; i.alt = first.alt; i.loading = 'lazy'; box.appendChild(i); return i; }));
-    var dots = document.createElement('span'); dots.className = 'dots';
-    imgs.forEach(function () { dots.appendChild(document.createElement('i')); }); box.appendChild(dots);
-    var k = 0, hold = false;
-    function show(n) { imgs.forEach(function (im, j) { im.classList.toggle('on', j === n); dots.children[j].classList.toggle('on', j === n); }); if (fig) fig.dataset.img = srcs[n]; }
-    box.classList.add('ready'); show(0);
-    if (reduce || imgs.length < 2) return;
-    box.addEventListener('pointerenter', function () { hold = true; }); box.addEventListener('pointerleave', function () { hold = false; });
-    setInterval(function () { if (hold || document.hidden) return; k = (k + 1) % imgs.length; show(k); }, 3200);
-  });
+  var poster = document.querySelector('.poster');
+  poster.addEventListener('click', function () { openAt([poster], 0); });
+  poster.addEventListener('keydown', function (e) { if (e.key === 'Enter') openAt([poster], 0); });
+  var por = document.querySelector('.portrait');
+  por.style.cursor = 'zoom-in';
+  por.addEventListener('click', function () { var d = document.createElement('div'); d.dataset.img = 'img/portrait.webp'; d.dataset.en = 'Fuad Qadan'; d.dataset.ar = 'فؤاد قعدان'; openAt([d], 0); });
 
   // copy email
   document.querySelectorAll('[data-copy]').forEach(function (b) {
