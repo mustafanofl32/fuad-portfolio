@@ -9,7 +9,7 @@
 <meta property="og:description" content="Awareness campaigns, roll-ups and brochures, product ads and video. Amman, Jordan.">
 <meta property="og:image" content="https://mustafanofl32.github.io/fuad-portfolio/img/portrait.webp">
 <link rel="manifest" href="data:application/manifest+json,{\"name\":\"Fuad Qadan\",\"icons\":[{\"src\":\"https://mustafanofl32.github.io/fuad-portfolio/icon-512.png\",\"sizes\":\"512x512\",\"type\":\"image/png\"}]}">
-<meta name="theme-color" content="#0B1826">
+<meta name="theme-color" content="#F3F5F8">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -17,7 +17,7 @@
   (function () {
     var d = document.documentElement;
     try {
-      var t = localStorage.getItem('fq-theme'); if (t) d.setAttribute('data-theme', t);
+      var t = localStorage.getItem('fq-theme2'); if (t) d.setAttribute('data-theme', t);
       var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('fq-lang');
       if (l === 'ar') { d.lang = 'ar'; d.dir = 'rtl'; }
     } catch (e) {}
@@ -32,21 +32,16 @@
   --bg:#F3F5F8; --paper:#FFFFFF; --panel:#E5EAF1; --ink:#0D1B2A; --muted:#43546A; --faint:#5E6F85; --rule:#D3DAE4; --mark:#8C9BB0;
   --accent:#0E2A47; --steel:#2F6690; --amber:#F4A259; --amber-ink:#A4531A; --on-amber:#0D1B2A;
   --q1:#0E2A47; --q2:#2F6690; --btn:#0E2A47; --on-btn:#F3F5F8; --shade:rgba(13,27,42,.20);
-  --screen:#07111C; --screen-ink:#EAF0F6; --screen-muted:#9EB0C5; --screen-rule:#1C2E44;
+  --band:#E6ECF3; --band-ink:#0D1B2A; --band-muted:#43546A; --band-rule:#CBD4DF; --sheet:#F8FAFC; --frame:#DCE3EC;
   --display:"Sora", "Segoe UI", system-ui, sans-serif;
   --body:"DM Sans", "Segoe UI", system-ui, sans-serif;
   --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
   --ease:cubic-bezier(.16,1,.3,1);
   --spring:cubic-bezier(.34,1.4,.64,1);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){ color-scheme:dark;
-    --bg:#0B1826; --paper:#102135; --panel:#13263B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8699B0; --rule:#20354D; --mark:#5D7390;
-    --accent:#F4A259; --amber-ink:#F4A259; --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; --shade:rgba(0,0,0,.5); }
-}
 :root[data-theme="dark"]{ color-scheme:dark;
   --bg:#0B1826; --paper:#102135; --panel:#13263B; --ink:#EAF0F6; --muted:#A3B3C6; --faint:#8699B0; --rule:#20354D; --mark:#5D7390;
-  --accent:#F4A259; --amber-ink:#F4A259; --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; --shade:rgba(0,0,0,.5); }
+  --accent:#F4A259; --amber-ink:#F4A259; --q1:#4A86BC; --q2:#9CC3E4; --btn:#F4A259; --on-btn:#0D1B2A; --shade:rgba(0,0,0,.5); --band:#07111C; --band-ink:#EAF0F6; --band-muted:#9EB0C5; --band-rule:#1C2E44; --sheet:#0A1520; --frame:#101F30; }
 html[lang="ar"]{ --display:"Readex Pro", "Segoe UI", Tahoma, sans-serif; --body:"Readex Pro", "Segoe UI", Tahoma, sans-serif; }
 html[lang="en"] [lang="ar"].t, html[lang="ar"] .t[lang="en"]{display:none}
 
@@ -103,7 +98,6 @@ html[dir="rtl"] .top nav a::after{transform-origin:right}
 #theme:hover svg{transform:rotate(40deg)}
 .switch .i-sun{display:none}
 :root[data-theme="dark"] .switch .i-sun{display:block} :root[data-theme="dark"] .switch .i-moon{display:none}
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .switch .i-sun{display:block} :root:not([data-theme="light"]) .switch .i-moon{display:none} }
 .lang-btn{font-family:"Readex Pro", var(--body)}
 
 /* ---------- hero ---------- */
@@ -133,7 +127,6 @@ html[dir="rtl"] .btn:hover .knob{transform:translateX(-3px) rotate(45deg)}
 .portrait .ph{border-radius:4px; overflow:hidden; background:var(--panel); aspect-ratio:1; box-shadow:0 40px 80px -40px var(--shade)}
 .portrait img{width:100%; height:100%; object-fit:cover; transition:transform 1.4s var(--ease)}
 .portrait:hover img{transform:scale(1.03)}
-.portrait figcaption{display:flex; justify-content:space-between; margin-top:26px; color:var(--faint)}
 .reg{position:absolute; width:26px; height:26px; top:-44px; inset-inline-end:-6px; stroke:var(--mark); fill:none; stroke-width:1; z-index:2}
 @media (prefers-reduced-motion:no-preference){
   .portrait .ph{animation:proof 1.5s .15s var(--ease) both}
@@ -162,12 +155,12 @@ section.block{padding-top:clamp(96px,11vw,160px)}
 .head p{color:var(--muted); margin:18px 0 0; max-width:58ch}
 
 /* ---------- screening room (films) ---------- */
-.screen{background:var(--screen); color:var(--screen-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
-.screen .head .line::after{background:var(--screen-rule)}
-.screen .head p{color:var(--screen-muted)}
+.screen{background:var(--band); color:var(--band-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
+.screen .head .line::after{background:var(--band-rule)}
+.screen .head p{color:var(--band-muted)}
 .films{display:grid; grid-template-columns:minmax(0,2fr) minmax(0,.633fr) minmax(0,.633fr); gap:clamp(12px,1.4vw,20px); align-items:start}
 .film{cursor:pointer}
-.film .frame{position:relative; border-radius:8px; overflow:hidden; background:#0E1B2A; aspect-ratio:9/16; transition:border-radius .6s var(--ease), box-shadow .6s var(--ease)}
+.film .frame{position:relative; border-radius:8px; overflow:hidden; background:var(--frame); aspect-ratio:9/16; transition:border-radius .6s var(--ease), box-shadow .6s var(--ease)}
 .film.wide .frame{aspect-ratio:16/9}
 .film video{width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease), filter .6s var(--ease)}
 .film .play{position:absolute; inset:0; margin:auto; width:64px; height:64px; border-radius:50%; background:var(--amber); display:grid; place-items:center; box-shadow:0 18px 40px -16px rgba(0,0,0,.6); transition:transform .5s var(--spring), opacity .4s}
@@ -178,9 +171,9 @@ section.block{padding-top:clamp(96px,11vw,160px)}
 .film .bar{position:absolute; inset-inline:0; bottom:0; height:3px; background:var(--amber); transform:scaleX(0); transform-origin:left; transition:transform .2s linear}
 html[dir="rtl"] .film .bar{transform-origin:right}
 .film h3{font-size:17px; margin-top:14px; line-height:1.35}
-.film p{margin:3px 0 0; color:var(--screen-muted); font-size:14px}
+.film p{margin:3px 0 0; color:var(--band-muted); font-size:14px}
 @media (hover:hover){
-  .film:hover .frame{border-radius:14px; box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+  .film:hover .frame{border-radius:14px; box-shadow:0 30px 60px -30px var(--shade)}
   .film:hover video{transform:scale(1.04)}
   .film:hover .play{transform:scale(1.08)}
   .film:not(.wide):hover .play{opacity:1; transform:none}
@@ -232,14 +225,14 @@ html[dir="rtl"] .film .bar{transform-origin:right}
 .poster figcaption .mono{color:var(--faint)}
 
 /* ---------- contact sheet (product ads) ---------- */
-.sheet-band{background:var(--screen); color:var(--screen-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
-.sheet-band .head .line::after{background:var(--screen-rule)}
-.sheet-band .head p{color:var(--screen-muted)}
-.contact-sheet{background:#0A1520; border:1px solid var(--screen-rule); border-radius:6px; padding:clamp(14px,2vw,26px)}
+.sheet-band{background:var(--band); color:var(--band-ink); margin-top:clamp(96px,11vw,160px); padding-block:clamp(72px,8vw,120px)}
+.sheet-band .head .line::after{background:var(--band-rule)}
+.sheet-band .head p{color:var(--band-muted)}
+.contact-sheet{background:var(--sheet); border:1px solid var(--band-rule); border-radius:6px; padding:clamp(14px,2vw,26px)}
 .edge{display:flex; justify-content:space-between; gap:12px; color:#F4A259; opacity:.85; margin-bottom:14px}
 .frames{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(12px,1.6vw,22px)}
 .fr{cursor:zoom-in}
-.fr .img{aspect-ratio:1; overflow:hidden; background:#101F30; outline:1px solid rgba(234,240,246,.06); transition:outline-color .4s}
+.fr .img{aspect-ratio:1; overflow:hidden; background:var(--frame); outline:1px solid var(--band-rule); transition:outline-color .4s}
 .fr img{width:100%; height:100%; object-fit:cover; transition:transform 1.1s var(--ease), filter .6s}
 .fr figcaption{display:flex; gap:12px; align-items:baseline; margin-top:10px; font-size:14.5px}
 .fr figcaption .mono{color:#F4A259}
@@ -400,7 +393,6 @@ html.locked,html.locked body{overflow:hidden}
       <figure class="portrait crop">
         <svg class="reg" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="7"/><path d="M13 0v26M0 13h26"/></svg>
         <div class="ph"><img src="img/portrait.webp" alt="Portrait of Fuad Qadan" fetchpriority="high"></div>
-        <figcaption><span class="mono">FUAD QADAN</span><span class="mono">1:1 · PORTRAIT</span></figcaption>
       </figure>
     </section>
 
@@ -420,17 +412,17 @@ html.locked,html.locked body{overflow:hidden}
       <p><span class="t" lang="en">Our Step supports people with mental disabilities and their families. I've worked with them since 2017 on media, photography, video and design, for projects funded by the European Union, USAID and UNDP. These are from their mental health work with FSSP in Ma'an, in partnership with Canada.</span><span class="t" lang="ar">تدعم جمعية خطوتنا الأشخاص ذوي الإعاقة النفسية وأسرهم. أعمل معهم منذ 2017 في الإعلام والتصوير والفيديو والتصميم، لمشاريع بتمويل من الاتحاد الأوروبي وUSAID وUNDP. هذه الأعمال من مشروعهم للصحة النفسية مع FSSP في معان، بالشراكة مع كندا.</span></p>
     </div>
     <div class="films" data-group="films">
-        <article class="film wide" data-video="media/v3.mp4" data-en="Project report, Ma'an · FSSP · Our Step · 16:9" data-ar="تقرير المشروع في معان · FSSP · خطوتنا · 16:9" tabindex="0" role="button" aria-label="Project report, Ma'an">
+        <article class="film wide" data-video="media/v3.mp4" data-en="Project report, Ma'an · FSSP · Our Step" data-ar="تقرير المشروع في معان · FSSP · خطوتنا" tabindex="0" role="button" aria-label="Project report, Ma'an">
           <div class="frame"><video src="media/v3.mp4" poster="media/v3-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">4:06</span></div>
-          <h3><span class="t" lang="en">Project report, Ma'an</span><span class="t" lang="ar">تقرير المشروع في معان</span></h3><p><span class="t" lang="en">FSSP · Our Step · 16:9</span><span class="t" lang="ar">FSSP · خطوتنا · 16:9</span></p>
+          <h3><span class="t" lang="en">Project report, Ma'an</span><span class="t" lang="ar">تقرير المشروع في معان</span></h3><p><span class="t" lang="en">FSSP · Our Step</span><span class="t" lang="ar">FSSP · خطوتنا</span></p>
         </article>
-        <article class="film" data-video="media/v1.mp4" data-en="Mental health awareness · Reel · 9:16" data-ar="توعية بالصحة النفسية · ريل · 9:16" tabindex="0" role="button" aria-label="Mental health awareness">
+        <article class="film" data-video="media/v1.mp4" data-en="Mental health awareness · Reel · Our Step" data-ar="توعية بالصحة النفسية · ريل · خطوتنا" tabindex="0" role="button" aria-label="Mental health awareness">
           <div class="frame"><video src="media/v1.mp4" poster="media/v1-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">0:48</span></div>
-          <h3><span class="t" lang="en">Mental health awareness</span><span class="t" lang="ar">توعية بالصحة النفسية</span></h3><p><span class="t" lang="en">Reel · 9:16</span><span class="t" lang="ar">ريل · 9:16</span></p>
+          <h3><span class="t" lang="en">Mental health awareness</span><span class="t" lang="ar">توعية بالصحة النفسية</span></h3><p><span class="t" lang="en">Reel · Our Step</span><span class="t" lang="ar">ريل · خطوتنا</span></p>
         </article>
-        <article class="film" data-video="media/v2.mp4" data-en="Illustrated reel · Reel · 9:16" data-ar="ريل مرسوم · ريل · 9:16" tabindex="0" role="button" aria-label="Illustrated reel">
+        <article class="film" data-video="media/v2.mp4" data-en="Illustrated reel · Reel · Our Step" data-ar="ريل مرسوم · ريل · خطوتنا" tabindex="0" role="button" aria-label="Illustrated reel">
           <div class="frame"><video src="media/v2.mp4" poster="media/v2-poster.jpg" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bar"></span><span class="dur">0:48</span></div>
-          <h3><span class="t" lang="en">Illustrated reel</span><span class="t" lang="ar">ريل مرسوم</span></h3><p><span class="t" lang="en">Reel · 9:16</span><span class="t" lang="ar">ريل · 9:16</span></p>
+          <h3><span class="t" lang="en">Illustrated reel</span><span class="t" lang="ar">ريل مرسوم</span></h3><p><span class="t" lang="en">Reel · Our Step</span><span class="t" lang="ar">ريل · خطوتنا</span></p>
         </article>
     </div>
   </div>
@@ -445,19 +437,19 @@ html.locked,html.locked body{overflow:hidden}
     <div class="expo" data-group="rollups">
         <figure class="stand" data-img="img/rollup-sanadak-ar.webp" data-en="Sanadak · Arabic" data-ar="سندك · عربي" tabindex="0">
           <div class="sheet"><img src="img/rollup-sanadak-ar.webp" alt="Sanadak project roll-up in Arabic with a map of Irbid, Zarqa and Karak" loading="lazy"></div><div class="base"></div><div class="floor"></div>
-          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span><span class="mono">ARABIC · 1:2</span></figcaption>
+          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span></figcaption>
         </figure>
         <figure class="stand" data-img="img/rollup-sanadak-en.webp" data-en="Sanadak · English" data-ar="سندك · إنجليزي" tabindex="0">
           <div class="sheet"><img src="img/rollup-sanadak-en.webp" alt="Sanadak project roll-up in English" loading="lazy"></div><div class="base"></div><div class="floor"></div>
-          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span><span class="mono">ENGLISH · 1:2</span></figcaption>
+          <figcaption><span class="t" lang="en">Sanadak</span><span class="t" lang="ar">سندك</span></figcaption>
         </figure>
         <figure class="stand" data-img="img/rollup-ourstep-ar.webp" data-en="Our Step objectives · Arabic" data-ar="أهداف خطوتنا · عربي" tabindex="0">
           <div class="sheet"><img src="img/rollup-ourstep-ar.webp" alt="Our Step Association objectives roll-up in Arabic" loading="lazy"></div><div class="base"></div><div class="floor"></div>
-          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span><span class="mono">ARABIC · 1:2</span></figcaption>
+          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span></figcaption>
         </figure>
         <figure class="stand" data-img="img/rollup-ourstep-en.webp" data-en="Our Step objectives · English" data-ar="أهداف خطوتنا · إنجليزي" tabindex="0">
           <div class="sheet"><img src="img/rollup-ourstep-en.webp" alt="Our Step Association objectives roll-up in English" loading="lazy"></div><div class="base"></div><div class="floor"></div>
-          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span><span class="mono">ENGLISH · 1:2</span></figcaption>
+          <figcaption><span class="t" lang="en">Our Step objectives</span><span class="t" lang="ar">أهداف خطوتنا</span></figcaption>
         </figure>
     </div>
   </div>
@@ -468,7 +460,7 @@ html.locked,html.locked body{overflow:hidden}
   <section class="block" id="brochures">
     <div class="head">
       <div class="line"><h2><span class="t" lang="en">Brochures and a poster</span><span class="t" lang="ar">بروشورات وملصق</span></h2></div>
-      <p><span class="t" lang="en">A4 tri-fold brochures on depression and social anxiety for Our Step's awareness sessions. Hover to fold, click to read. Next to them, an app poster for Yellow Taxi.</span><span class="t" lang="ar">بروشورات A4 ثلاثية الطي عن الاكتئاب والقلق الاجتماعي لجلسات التوعية في جمعية خطوتنا. مرّر المؤشر لطيّها، واضغط للقراءة. وبجانبها ملصق تطبيق التكسي الأصفر.</span></p>
+      <p><span class="t" lang="en">Tri-fold brochures on depression and social anxiety for Our Step's awareness sessions. Hover to fold, click to read. Next to them, an app poster for Yellow Taxi.</span><span class="t" lang="ar">بروشورات ثلاثية الطي عن الاكتئاب والقلق الاجتماعي لجلسات التوعية في جمعية خطوتنا. مرّر المؤشر لطيّها، واضغط للقراءة. وبجانبها ملصق تطبيق التكسي الأصفر.</span></p>
     </div>
     <div class="print">
       <div>
@@ -485,11 +477,11 @@ html.locked,html.locked body{overflow:hidden}
         <div class="tri crop" id="tri" role="button" tabindex="0" aria-label="Open the brochure" data-img="img/brochure-dep-out.webp" data-en="Depression brochure · outside" data-ar="بروشور الاكتئاب · الخارج">
           <div class="p"></div><div class="p"></div><div class="p"></div>
         </div>
-        <div class="tri-cap"><span><span class="t" lang="en">Mental health brochures</span><span class="t" lang="ar">بروشورات الصحة النفسية</span></span><span class="mono">A4 · TRI-FOLD · AR</span></div>
+        <div class="tri-cap"><span><span class="t" lang="en">Mental health brochures</span><span class="t" lang="ar">بروشورات الصحة النفسية</span></span></div>
       </div>
       <figure class="poster crop" data-img="img/work-taxi.webp" data-en="Yellow Taxi · app poster" data-ar="التكسي الأصفر · ملصق التطبيق" tabindex="0">
         <div class="ph"><img src="img/work-taxi.webp" alt="Yellow Taxi app poster" loading="lazy"></div>
-        <figcaption><span><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></span><span class="mono">POSTER · RIDER + CAPTAIN</span></figcaption>
+        <figcaption><span><span class="t" lang="en">Yellow Taxi</span><span class="t" lang="ar">التكسي الأصفر</span></span></figcaption>
       </figure>
     </div>
   </section>
@@ -502,14 +494,14 @@ html.locked,html.locked body{overflow:hidden}
       <p><span class="t" lang="en">Product ads for a computer supplies company in Amman, the official ZKTeco agent in Jordan. I designed the posts and sold through their social media: attendance devices, point-of-sale systems, cameras and accessories, each with the price and the specs a buyer needs.</span><span class="t" lang="ar">إعلانات منتجات لشركة لوازم كمبيوتر في عمّان، الوكيل الرسمي لـ ZKTeco في الأردن. صممت المنشورات وبعت عبر صفحاتهم على السوشال ميديا: أجهزة الحضور والانصراف، وأنظمة نقاط البيع، والكاميرات والإكسسوارات، مع السعر والمواصفات التي يحتاجها المشتري.</span></p>
     </div>
     <div class="contact-sheet">
-      <div class="edge mono"><span>JABAL ALI COMPUTER TRADING</span><span>1:1 · SOCIAL</span></div>
+      
       <div class="frames" data-group="ads">
-          <figure class="fr" data-img="img/post-iclock.webp" data-en="ZKTeco iClock 360" data-ar="ZKTeco iClock 360" tabindex="0"><div class="img"><img src="img/post-iclock.webp" alt="ZKTeco iClock 360 attendance device ad" loading="lazy"></div><figcaption><span class="mono">01</span><span class="t" lang="en">ZKTeco iClock 360</span><span class="t" lang="ar">ZKTeco iClock 360</span></figcaption></figure>
-          <figure class="fr" data-img="img/post-iface770.webp" data-en="iFace770 attendance" data-ar="جهاز حضور iFace770" tabindex="0"><div class="img"><img src="img/post-iface770.webp" alt="ZKTeco iFace770 attendance device ad with price" loading="lazy"></div><figcaption><span class="mono">02</span><span class="t" lang="en">iFace770 attendance</span><span class="t" lang="ar">جهاز حضور iFace770</span></figcaption></figure>
-          <figure class="fr" data-img="img/post-zkpos.webp" data-en="Smart point of sale" data-ar="نقاط البيع الذكية" tabindex="0"><div class="img"><img src="img/post-zkpos.webp" alt="ZKTeco point of sale system ad" loading="lazy"></div><figcaption><span class="mono">03</span><span class="t" lang="en">Smart point of sale</span><span class="t" lang="ar">نقاط البيع الذكية</span></figcaption></figure>
-          <figure class="fr" data-img="img/post-c2e2.webp" data-en="C2E2 camera" data-ar="كاميرا C2E2" tabindex="0"><div class="img"><img src="img/post-c2e2.webp" alt="C2E2 3MP camera ad" loading="lazy"></div><figcaption><span class="mono">04</span><span class="t" lang="en">C2E2 camera</span><span class="t" lang="ar">كاميرا C2E2</span></figcaption></figure>
-          <figure class="fr" data-img="img/post-marsriva.webp" data-en="Marsriva power strip" data-ar="مشترك Marsriva" tabindex="0"><div class="img"><img src="img/post-marsriva.webp" alt="Marsriva LC-PS301 power strip ad" loading="lazy"></div><figcaption><span class="mono">05</span><span class="t" lang="en">Marsriva power strip</span><span class="t" lang="ar">مشترك Marsriva</span></figcaption></figure>
-          <a class="fr more" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener"><div class="img"><span class="mono">06</span><span class="t1"><span class="t" lang="en">More on Behance</span><span class="t" lang="ar">أعمال أكثر على Behance</span></span><span class="go"><span class="t" lang="en">Open</span><span class="t" lang="ar">افتح</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div><figcaption><span class="mono">06</span>Behance</figcaption></a>
+          <figure class="fr" data-img="img/post-iclock.webp" data-en="ZKTeco iClock 360" data-ar="ZKTeco iClock 360" tabindex="0"><div class="img"><img src="img/post-iclock.webp" alt="ZKTeco iClock 360 attendance device ad" loading="lazy"></div><figcaption><span class="t" lang="en">ZKTeco iClock 360</span><span class="t" lang="ar">ZKTeco iClock 360</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-iface770.webp" data-en="iFace770 attendance" data-ar="جهاز حضور iFace770" tabindex="0"><div class="img"><img src="img/post-iface770.webp" alt="ZKTeco iFace770 attendance device ad with price" loading="lazy"></div><figcaption><span class="t" lang="en">iFace770 attendance</span><span class="t" lang="ar">جهاز حضور iFace770</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-zkpos.webp" data-en="Smart point of sale" data-ar="نقاط البيع الذكية" tabindex="0"><div class="img"><img src="img/post-zkpos.webp" alt="ZKTeco point of sale system ad" loading="lazy"></div><figcaption><span class="t" lang="en">Smart point of sale</span><span class="t" lang="ar">نقاط البيع الذكية</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-c2e2.webp" data-en="C2E2 camera" data-ar="كاميرا C2E2" tabindex="0"><div class="img"><img src="img/post-c2e2.webp" alt="C2E2 3MP camera ad" loading="lazy"></div><figcaption><span class="t" lang="en">C2E2 camera</span><span class="t" lang="ar">كاميرا C2E2</span></figcaption></figure>
+          <figure class="fr" data-img="img/post-marsriva.webp" data-en="Marsriva power strip" data-ar="مشترك Marsriva" tabindex="0"><div class="img"><img src="img/post-marsriva.webp" alt="Marsriva LC-PS301 power strip ad" loading="lazy"></div><figcaption><span class="t" lang="en">Marsriva power strip</span><span class="t" lang="ar">مشترك Marsriva</span></figcaption></figure>
+          <a class="fr more" href="https://www.behance.net/fuadqadan" target="_blank" rel="noopener"><div class="img"><span></span><span class="t1"><span class="t" lang="en">More on Behance</span><span class="t" lang="ar">أعمال أكثر على Behance</span></span><span class="go"><span class="t" lang="en">Open</span><span class="t" lang="ar">افتح</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div><figcaption>Behance</figcaption></a>
       </div>
     </div>
   </div>
@@ -573,8 +565,8 @@ html.locked,html.locked body{overflow:hidden}
   document.getElementById('lang').addEventListener('click', function () { setLang(L() === 'ar' ? 'en' : 'ar'); });
   document.title = titleFor[L()]; setWa();
   document.getElementById('theme').addEventListener('click', function () {
-    var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-    var next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next); store('fq-theme', next);
+    var dark = root.getAttribute('data-theme') === 'dark';
+    var next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next); store('fq-theme2', next);
   });
 
   // films: hover to preview with a progress bar, play in view on touch, click to watch with sound
